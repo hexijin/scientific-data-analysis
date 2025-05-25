@@ -2,7 +2,7 @@
 
 *Regular meeting schedule is Wednesdays and Saturdays, 11:00-12:00*
 
-### Part 1: Scientific Python (using *Astronomical Python*)
+### Part 1: Scientific Python (using Imad Pasha, *Astronomical Python*)
 
 #### Week 1 &mdash; Shell and Python Quick-Start/Review
 
@@ -16,29 +16,30 @@
 
 #### Week 3 &mdash; SciPy and AstroPy
 
-* May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy ([&sect;2 Numerical Integration](./aspy/c07/c07s02.ipynb)) &mdash; Problem Set 3 (in addition to working through all the code in the chapter): Do Exercise 7.1, and show Jeremy how to save his first version of `scientific-data-analysis/jeremy/aspy07/c07.ipynb` (which will require some `mkdir` and `cd` commands in his local git repository) and then how to use git to add the new notebook, commit it, and push it (and you should both repeat the add-commit-push cycle while building out the notebook until executing those commands in the shell is completely routine)
+* May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy ([&sect;2 Numerical Integration](./aspy/c07/c07s02.ipynb)) &mdash; Problem Set 3 (in addition to working through all the code in the chapter): Do Exercise 7.1, and show Jeremy how to save his first version of `scientific-data-analysis/jeremy/aspy07/c07.ipynb` (which will require some `mkdir` and `cd` commands in his local git repository), and then how to use `git` to add the new notebook, commit it, and push it (and you should both repeat the add-commit-push cycle while building out your notebooks until executing those commands in the shell is completely routine)
 
 ### BELOW THIS DIVISION IS PLAN NOT ACTUAL
 
 * May 31 &mdash; Complete Chapter 8: Astropy and Astronomical Packages
 
-### Part 2: Data Science Foundations (using *Data Science from Scratch, 2nd Edition*)
+### Part 2: Data Science Foundations (using Joel Grus, *Data Science from Scratch, 2nd Edition*)
 
 #### Week 4
 
-* June 4 &mdash; Ch. 1–2: What is Data Science? Python Review / ALTERNATIVELY, WE COULD DO ONE MORE CHAPTER OF PASHA SINCE CHAPTERS 1-2 SHOULD BE EASY NOW
-* June 7 &mdash; Ch. 3: Visualizing Data
+* June 4 &mdash; Chapters 1 and 2: Introduction and A Crash Course in Python 
+* June 4 &mdash; ALTERNATIVELY, WE COULD DO CHAPTER 9 OF PASHA FOR JUNE 4 SINCE CHAPTERS 1-3 OF GRUS ARE PROBABLY REALLY RAPID TO REVIEW FOR BOTH OF YOU NOW
+* June 7 &mdash; Chapters 3 and 4: Visualizing Data (matplotlib again) and Linear Algebra (Grus introduces his Vector and Matrix classes)
 
 #### Week 5
 
-* June 11 and 14 &mdash; Ch. 4–6: Linear Algebra, Statistics, Probability
+* June 11 &mdash; Chapters 5 and 6: Statistics and Probability
+* June 14 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent
 
 #### Week 6
 
-* June 18 and 21 &mdash; Ch. 7–8: Hypothesis Testing, Gradient Descent
+* June 18 &mdash; Chapters 9 and 10: Getting Data and Working with Data
+* June 21 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
 
 #### Week 7
 
-* June 25 &mdash; Ch. 9–10: Getting Data, Working with Data
-* Possible bonus topic for Saturday after term end &mdash; Ch. 11–12: Machine Learning intro
-* I will add that another stretch goal for Part II is that it would be great to spend an hour or two following along with this: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/)
+* June 25 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; A great stretch goal for the Data Science Portion of the IS would be to follow along with this live coding session (and build the code with him, pausing when you need to catch up): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/)
