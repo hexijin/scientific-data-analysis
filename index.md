@@ -1,6 +1,6 @@
 # Scientific Data Analysis in Python
 
-*An independent study to consolidate and advance understanding of mainstream and cutting edge scientific data analysis and general data science techniques.*
+*An independent study to consolidate and advance understanding of mainstream and cutting edge scientific data analysis and general data science techniques, up to and including currently-topical neural net and deep learning implementations (which are the relevant preparation for possible future study of natural-language processing and LLMs)*
 
 Term 6 of Academic Year 2024-2025, Deep Springs College
 
