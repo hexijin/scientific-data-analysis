@@ -8,8 +8,8 @@ Back to [Course home page](../index.html)
 
 #### Week 1 &mdash; Shell and Python Quick-Start/Review
 
-* May 16 &mdash; For first meeting, rapid completion of Chapters 1 to 3, and review language features, syntax, and style with Brian
-* May 17 &mdash; Complete Chapter 4: Introduction to Python &mdash; Problem Set 1: Use for loops to compute the first 20 Fibonacci numbers
+* May 16 &mdash; Complete Chapters 1 to 3: Unix (shell) Basics, Installing Python, and the Astronomy/Scientific Data Analysis Stack &mdash; Problem Set 0: Get Anaconda downloaded and installed and use the IPython interface &mdash; Discussed Python language features, syntax, and style (PEP 8), differences between Windows and Unix shells, globbing, and Python's OSIL functionality
+* May 17 &mdash; Complete Chapter 4: Introduction to Python &mdash; Problem Set 1: Use for loops to compute the first 20 Fibonacci numbers (screenshot your solution in IPython) &mdash; Discussed notebook tools and IDEs
 
 #### Week 2 Matplotlib and Numpy
 
