@@ -2,6 +2,8 @@
 
 *Regular meeting schedule is Wednesdays and Saturdays, 11:00-12:00*
 
+Back to [Course home page](../index.html)
+
 ### Part 1: Scientific Python (using Imad Pasha, *Astronomical Python*)
 
 #### Week 1 &mdash; Shell and Python Quick-Start/Review
@@ -18,7 +20,7 @@
 
 * May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy ([&sect;2 Numerical Integration](./aspy/c07/c07s02.ipynb)) &mdash; Problem Set 3 (in addition to working through all the code in the chapter): Do Exercise 7.1, and show Jeremy how to save his first version of `scientific-data-analysis/jeremy/aspy07/c07.ipynb` (which will require some `mkdir` and `cd` commands in his local git repository), and then how to use `git` to add the new notebook, commit it, and push it (and you should both repeat the add-commit-push cycle while building out your notebooks until executing those commands in the shell is completely routine)
 
-### BELOW THIS DIVISION IS PLAN NOT ACTUAL
+#### === BELOW THIS DIVISION IS GOAL/TENTATIVE PLAN &mdash; NOT ACTUAL ===
 
 * May 31 &mdash; Complete Chapter 8: Astropy and Astronomical Packages
 
