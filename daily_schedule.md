@@ -12,22 +12,21 @@
 #### Week 2 Matplotlib and Numpy
 
 * May 21 &mdash; Install (if not already part of your Python distribution) and start working in Jupyter Lab &mdash; Complete Chapter 5: Visualization with Matplotlib ([&sect;2 A Simple Plot](./aspy/c05/c05s02.ipynb), [&sect;4 Subplots](./aspy/c05/c05s04.ipynb), [&sect;5 Adjusting Marker Properties](./aspy/c05/c05s05.ipynb), [&sect;6 Adjusting Ticks](./aspy/c05/c05s06.ipynb), [&sect;7 Adjusting Fonts and Font Sizes](./aspy/c05/c05s07.ipynb), [&sect;8 Multiple Subplots](./aspy/c05/c05s08.ipynb), [&sect;9 Subplot Mosaic](./aspy/c05/c05s09.ipynb), [&sect;10 Research Example: Displaying a Best Fit](./aspy/c05/c05s10.ipynb), [&sect;11 Error Bars](./aspy/c05/c05s11.ipynb), [&sect;12 Plotting *n*-Dimensional Data](./aspy/c05/c05s12.ipynb), [&sect;13 Color Bars](./aspy/c05/c05s13.ipynb)) &mdash; Problem Set 2: Make some histogram and scatter plots using the [iris dataset](./iris/iris_dataset.csv) (save your plots as a Jupyter Lab notebook) ([PS02](./psets/ps02.ipynb))
-* May 25 &mdash; Complete Chapter 6: Numerical Computing with NumPy ([&sect;5 Research Example: An Exoplanet Transit](./aspy/c06/c06s05.ipynb)) &mdash; Create a github account, fork the repo: brianhill/scientific-data-analysis &mdash; Then figure out how to get a local copy onto your machine of your forks (hexijin/scientific-data-analysis or jeremychoy/scienctific-data-analsysis) and this will involve installing git on your machine (which will be different for Mac or Windows) &mdash; Started learning shell access to git
+* May 25 &mdash; Complete Chapter 6: Numerical Computing with NumPy ([&sect;5 Research Example: An Exoplanet Transit](./aspy/c06/c06s05.ipynb)) &mdash; Create a github account, fork the repo: brianhill/scientific-data-analysis &mdash; Then figure out how to get a local copy onto your machine of your forks (hexijin/scientific-data-analysis or jeremychoy/scienctific-data-analsysis) and this will involve installing git on your machine (which will be different for Mac or Windows) &mdash; Started learning shell access to git, and the add, commit, push cycle (which we will be adding more to once that is routine)
 
 #### Week 3 &mdash; SciPy and AstroPy
 
-
-* May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy &mdash; Show Jeremy how to make his first version of scientific-data-analysis/jeremy/aspy07/c07.ipynb and then add it, commmit it, and push it
+* May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy &mdash; Show Jeremy how to make his first version of scientific-data-analysis/jeremy/aspy07/c07.ipynb and then add it, commmit it, and push it (and then repeat that cycle while working until it is completely automatic)
 
 ### BELOW THIS DIVISION IS PLAN NOT ACTUAL
 
-* May 31 &mdash; Ch. 8: Astropy and Astronomical Packages
+* May 31 &mdash; Complete Chapter 7: Astropy and Astronomical Packages
 
 ### Part 2: Data Science Foundations (using *Data Science from Scratch, 2nd Edition*)
 
 #### Week 4
 
-* June 4 &mdash; Ch. 1–2: What is Data Science? Python Review
+* June 4 &mdash; Ch. 1–2: What is Data Science? Python Review / ALTERNATIVELY, WE COULD DO ONE MORE CHAPTER OF PASHA SINCE CHAPTERS 1-2 SHOULD BE EASY NOW
 * June 7 &mdash; Ch. 3: Visualizing Data
 
 #### Week 5
