@@ -16,11 +16,11 @@
 
 #### Week 3 &mdash; SciPy and AstroPy
 
-* May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy &mdash; Show Jeremy how to make his first version of scientific-data-analysis/jeremy/aspy07/c07.ipynb and then add it, commmit it, and push it (and then repeat that cycle while working until it is completely automatic)
+* May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy &mdash; Show Jeremy how to save his first version of scientific-data-analysis/jeremy/aspy07/c07.ipynb (in his local git repository) and then how to use git to add it, commmit it, and push it (and then repeat that cycle while working until it is completely automatic)
 
 ### BELOW THIS DIVISION IS PLAN NOT ACTUAL
 
-* May 31 &mdash; Complete Chapter 7: Astropy and Astronomical Packages
+* May 31 &mdash; Complete Chapter 7: Astropy and Astronomical Packages ([&sect;2 Numerical Integration](./aspy/c07/c07s02.ipynb))
 
 ### Part 2: Data Science Foundations (using *Data Science from Scratch, 2nd Edition*)
 
