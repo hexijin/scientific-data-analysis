@@ -1,10 +1,12 @@
-## Daily Schedule (Actual &mdash; Kept Retrospectively)
+## Daily Schedule Part 1 (Actual &mdash; Kept Retrospectively)
 
 *Regular meeting schedule is Wednesdays and Saturdays, 11:00-12:00*
 
 Back to [Course home page](../index.html)
 
 ### Part 1: Scientific Python (using Imad Pasha, *Astronomical Python*)
+
+Part 1 Uses Pasha and lasts for the first three weeks of Term 6
 
 #### Week 1 &mdash; Shell and Python Quick-Start/Review
 
@@ -19,27 +21,6 @@ Back to [Course home page](../index.html)
 #### Week 3 &mdash; SciPy and AstroPy
 
 * May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy ([&sect;2 Numerical Integration](./pasha/c07/c07s02.ipynb), [&sect;3 Optimization](./pasha/c07/c07s03.ipynb), [&sect;4 Statistics](./pasha/c07/c07s04.ipynb)) &mdash; Problem Set 3 (in addition to working through all the code in the chapter): Do Exercise 7.1 ([PS03](./psets/ps03.ipynb)), and show Jeremy how to save his first version of `scientific-data-analysis/jeremy/pasha07/c07.ipynb` (which will require some `mkdir` and `cd` commands in his local git repository), and then how to use `git` to add the new notebook, commit it, and push it (and you should both repeat the add-commit-push cycle while building out your notebooks until executing those commands in the shell is completely routine) &mdash; Introduced column vectors, row vectors, and matrix and vector multiplication
-* June 1 &mdash; Complete Chapter 8: Astropy and Astronomical Packages (([&sect;2 Units and Constants](./pasha/c08/c08s02.ipynb) &mdash; Also, it's time to add to your git knowledge the ideas of origin and upstream, and a second cyle of operations: how to fetch from upstream (my GitHub repo), rebase (in your local repo), and push your rebased changes to your origin (your GitHub fork of my repo)
+* June 1 &mdash; Complete Chapter 8: Astropy and Astronomical Packages ([&sect;2 Units and Constants](./pasha/c08/c08s02.ipynb), [&sect;3](./pasha/c08/c08s03.ipynb), [&sect;4](./pasha/c08/c08s04.ipynb), [&sect;5](./pasha/c08/c08s05.ipynb), [&sect;6](./pasha/c08/c08s06.ipynb), [&sect;7](./pasha/c08/c08s07.ipynb)) &mdash; Also, it's time to add to your git knowledge the ideas of origin and upstream, and a second cyle of operations: how to fetch from upstream (my GitHub repo), rebase (in your local repo), and push your rebased changes to your origin (your GitHub fork of my repo)
 
-### Part 2: Data Science Foundations (using Joel Grus, *Data Science from Scratch, 2nd Edition*)
-
-#### === BELOW THIS DIVISION IS GOAL/TENTATIVE PLAN &mdash; NOT ACTUAL ===
-
-#### Week 4 &mdash; Yet Another Review of Python &mdash; Some Vector and Matrix Algebra &mdash; Statistics and Probability
-
-* June 4 &mdash; Chapters 1-3: Another excellent review of Python and Matplotlib which will help systematize your understanding of the language features you were using in Pasha's book &mdash; Chapter 4: Linear Algebra, wherein Grus introduces his Matrix and Vector classes ([Ch. 4 Matrix Algebra](./grus/grus04.ipynb))
-* June 7 &mdash; Chapters 5 and 6: Statistics and Probability
-
-#### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
-
-* June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent
-* June 14 &mdash; Chapters 9 and 10: Getting and Working with Data
-
-#### Week 6 &mdash; Machine Learning &mdash; Neural Networks &mdash; Start Deep Learning
-
-* June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
-* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning
-
-#### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
-
-* June 25 &mdash; A great finale for the second three-and-a-half weeks of the IS would be to (1) Do this real-time coding session to see how a real pro codes, including type-hinting, adherence to systematic style choices, and code testing (you build the code with Grus, pausing the video whenever you need to catch up, because he is fast): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) and (2) Do Chapter 21, Natural Language Processing (which does not include the 2017 &ldquo;Attention is All You Need&rdquo; transformers revolution, but which sets you up for a second-semester course machine-learning which would cover LLMs)
+See also [Daily Schedule - Part 2](./daily_schedule_part2.html)

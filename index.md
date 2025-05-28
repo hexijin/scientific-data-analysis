@@ -21,6 +21,7 @@ Auditor: Jeremy Choy (DS 24)
     * The examples use data hosted at [https://zenodo.org/records/10732223](https://zenodo.org/records/10732223)
 * Joel Grus, *Data Science from Scratch, 2nd Edition*
 
-## Actual Daily Schedule (Kept Retrospectively)
+## Actual Daily Schedules (Kept Retrospectively)
 
-* [Daily Schedule](./daily_schedule.html)
+* [Daily Schedule - Part 1](./daily_schedule_part1.html)
+* [Daily Schedule - Part 2](./daily_schedule_part2.html)
