@@ -19,28 +19,27 @@ Back to [Course home page](../index.html)
 #### Week 3 &mdash; SciPy and AstroPy
 
 * May 28 &mdash; Complete Chapter 7: Scientific Computing with SciPy ([&sect;2 Numerical Integration](./pasha/c07/c07s02.ipynb), [&sect;3 Optimization](./pasha/c07/c07s03.ipynb), [&sect;4 Statistics](./pasha/c07/c07s04.ipynb)) &mdash; Problem Set 3 (in addition to working through all the code in the chapter): Do Exercise 7.1 ([PS03](./psets/ps03.ipynb)), and show Jeremy how to save his first version of `scientific-data-analysis/jeremy/pasha07/c07.ipynb` (which will require some `mkdir` and `cd` commands in his local git repository), and then how to use `git` to add the new notebook, commit it, and push it (and you should both repeat the add-commit-push cycle while building out your notebooks until executing those commands in the shell is completely routine)
-
-* May 31 &mdash; Complete Chapter 8: Astropy and Astronomical Packages
+* June 1 &mdash; Complete Chapter 8: Astropy and Astronomical Packages
 
 ### Part 2: Data Science Foundations (using Joel Grus, *Data Science from Scratch, 2nd Edition*)
 
 #### === BELOW THIS DIVISION IS GOAL/TENTATIVE PLAN &mdash; NOT ACTUAL ===
 
-#### Week 4 &mdash; Another 
+#### Week 4 &mdash; Yet Another Review of Python &mdash; Some Vector and Matrix Algebra &mdash; Statistics and Probability
 
-* June 4 &mdash; Chapters 1-4: Grus's review of Python and Matplotlib and then Linear Algebra (Grus introduces his Vector and Matrix classes)
+* June 4 &mdash; Chapters 1-4: Grus's review of Python and Matplotlib and then Linear Algebra (where Grus introduces his Matrix and Vector classes)
 * June 7 &mdash; Chapters 5 and 6: Statistics and Probability
 
-#### Week 5 &mdash; Optimization
+#### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
 
 * June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent
-* June 14 &mdash; Chapters 9 and 10: Getting Data and Working with Data
+* June 14 &mdash; Chapters 9 and 10: Getting and Working with Data
 
-#### Week 6 &mdash; Machine Learning and Neural Networks
+#### Week 6 &mdash; Machine Learning &mdash; Neural Networks &mdash; Start Deep Learning
 
 * June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
 * June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning
 
-#### Week 7 &mdash; Deep Learning and Natural Language Processing
+#### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
 
-* June 25 &mdash; A great finale for the Data Science Portion of the IS would be to (1) follow along with this live coding session (and build the code with him, pausing when you need to catch up): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) and (2) to do Chapter 21, Natural Language Processing (which does not include the 2017 &ldquo;Attention is All You Need&rdquo; transformers revolution, but which sets you up for a course on LLMs)
+* June 25 &mdash; A great finale for the Data Science Portion of the IS would be to (1) do this real-time coding session (and build the code with Grus, pausing the video whenever you need to catch up, because he is fast): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) and (2) do Chapter 21, Natural Language Processing (which does not include the 2017 &ldquo;Attention is All You Need&rdquo; transformers revolution, but which sets you up for a second-semester course machine-learning which would cover LLMs)
