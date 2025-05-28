@@ -2,7 +2,7 @@
 
 *Regular meeting schedule is Wednesdays and Saturdays, 11:00-12:00*
 
-Back to [Course home page](../index.html)
+Back to [Course home page](./index.html)
 
 Part 2 Uses Grus and lasts for the second three-and-a-half weeks of Term 6
 
