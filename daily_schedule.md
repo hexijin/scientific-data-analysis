@@ -27,7 +27,7 @@ Back to [Course home page](../index.html)
 
 #### Week 4 &mdash; Yet Another Review of Python &mdash; Some Vector and Matrix Algebra &mdash; Statistics and Probability
 
-* June 4 &mdash; Chapters 1-4: Grus's review of Python and Matplotlib and then Linear Algebra (where Grus introduces his Matrix and Vector classes)
+* June 4 &mdash; Chapters 1-3: Another excellent review of Python and Matplotlib which will help systematize your understanding of the language features you were using in Pasha's book &mdash; Chapter 4: Linear Algebra, wherein Grus introduces his Matrix and Vector classes ([Ch. 4 Matrix Algebra](./grus/grus04.ipynb))
 * June 7 &mdash; Chapters 5 and 6: Statistics and Probability
 
 #### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
@@ -42,4 +42,4 @@ Back to [Course home page](../index.html)
 
 #### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
 
-* June 25 &mdash; A great finale for the Data Science Portion of the IS would be to (1) do this real-time coding session (and build the code with Grus, pausing the video whenever you need to catch up, because he is fast): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) and (2) do Chapter 21, Natural Language Processing (which does not include the 2017 &ldquo;Attention is All You Need&rdquo; transformers revolution, but which sets you up for a second-semester course machine-learning which would cover LLMs)
+* June 25 &mdash; A great finale for the second three-and-a-half weeks of the IS would be to (1) Do this real-time coding session to see how a real pro codes, including type-hinting, adherence to systematic style choices, and code testing (you build the code with Grus, pausing the video whenever you need to catch up, because he is fast): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) and (2) Do Chapter 21, Natural Language Processing (which does not include the 2017 &ldquo;Attention is All You Need&rdquo; transformers revolution, but which sets you up for a second-semester course machine-learning which would cover LLMs)
