@@ -4,6 +4,8 @@
 
 Back to [Course home page](./index.html)
 
+See also [Daily Schedule - Part 1](./daily_schedule_part1.html)
+
 ### Part 2: Data Science Foundations (using Joel Grus, *Data Science from Scratch, 2nd Edition*)
 
 Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
@@ -28,6 +30,8 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 
 #### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
 
-* June 25 &mdash; A great finale for Part 2 of the IS would be to (1) Do this real-time coding session to see how a real pro codes, including type-hinting, adherence to systematic style choices, and code testing (you build the code with Grus, pausing the video whenever you need to catch up, because he is fast): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) and (2) Do Chapter 21, Natural Language Processing (which does not include the 2017 &ldquo;Attention is All You Need&rdquo; transformers revolution, but which sets you up for a second-semester course in machine-learning that almost any computer science department will offer, and which will cover LLMs)
+* June 25 &mdash; A great finale for Part 2 of the IS would be to (1) Do this real-time coding session to see how a real pro codes, including type-hinting, adherence to systematic style choices, and code testing (you build the code with Grus, pausing the video whenever you need to catch up, because he is fast): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) and then (2) Do Chapter 21, Natural Language Processing
 
-See also [Daily Schedule - Part 1](./daily_schedule_part1.html)
+#### Looking Beyond
+
+The chapter we finished with does not attempt to cover the 2017 &ldquo;Attention is All You Need&rdquo; transformers revolution &mdash; Nonetheless, Grus has almost perfectly set you up for a second-semester course in deep learning and LLMs that almost any computer science department will (or soon will) be offering &mdash; You can survey beyond where Grus has taken us in a couple of ways: (1) Consider how LLMs have changed data science and will continue to change data science by watching from the 15:00 mark in [Doing Data Science in the Time of ChatGPT](https://youtu.be/oyV81rnLSJc?t=900) by Joel Grus &mdash; Recapitulate what we have done and then look inside the mathematics and implementation of LLMs, without actually implementing any part of them, by watching the seven 3Blue1Brown videos by Grant Sanderson numbered DL1 to DL7 &mdash; DL is short for "Deep Learning and the seven videos were published from 2017 to 2024 &mdash; You will find you can very easily skip the first few of Sanderson's videos given what we have already learned from Grus, so consider starting with [Transformers (how LLMs work) explained visually | DL5](https://youtu.be/wjZofJX0v4M)
