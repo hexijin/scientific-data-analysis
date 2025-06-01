@@ -8,12 +8,13 @@ Back to [Course home page](./index.html)
 
 Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 
-#### === BELOW THIS DIVISION IS GOAL/TENTATIVE PLAN &mdash; NOT ACTUAL ===
-
 #### Week 4 &mdash; Yet Another Review of Python &mdash; Some Vector and Matrix Algebra &mdash; Statistics and Probability
 
-* June 4 &mdash; Chapters 1-3: Another excellent review of Python and Matplotlib which will help systematize your understanding of the language features you were using in Pasha's book &mdash; Chapter 4: Linear Algebra, wherein Grus introduces his Matrix and Vector classes ([Ch. 4 Matrix Algebra](./grus/grus04.ipynb))
-* June 7 &mdash; Chapters 5 and 6: Statistics and Probability
+* June 4 &mdash; Chapters 1-3: Another excellent review of Python and Matplotlib which will help systematize your understanding of the language features you were using in Pasha's book &mdash; The assignment is to do the review of the three chapters, but to completely stop using Jupyter or Jupyter lab, and instead get everything working in PyCharm Professional Edition (free for students) or VS Code (but I have zero experience with that) &mdash; When Grus says (at the beginning of Chapter 2) that you should not be tampering with your base Python environment, he is completely correct (so learn how to make a venv that you could call grus or dsfs and then switch to it &mdash; if you didn't already do that for working through Pasha)
+
+#### === BELOW THIS DIVISION IS GOAL/TENTATIVE PLAN &mdash; NOT ACTUAL ===
+
+* June 7 &mdash; Chapters 4-6: Linear Algebra (wherein Grus introduces his Matrix and Vector classes), Statistics, and Probability (thanks to last fall's Bayesian Statistics class, everything in Chapters 5 and 6 will be review) &mdash; [Ch. 4 Matrix Algebra](./grus/grus04.ipynb)
 
 #### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
 
