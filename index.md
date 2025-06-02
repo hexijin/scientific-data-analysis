@@ -1,6 +1,10 @@
-# Scientific Data Analysis in Python
+# Scientific Data Analysis, Data Science, and Machine Learning in Python
 
-*An independent study to consolidate and advance understanding of mainstream and cutting edge scientific data analysis and general data science techniques, up to and including currently-topical neural net and deep learning implementations (which are the relevant preparation for possible future study of natural-language processing and LLMs)*
+*An independent study with two parts:*
+
+*Part 1: Consolidate and advance understanding of mainstream and cutting edge scientific data analysis techniques using Chapters 1-8 of Pasha,* Astronomical Python
+
+*Part 2: Survey data science techniques up to and including currently-topical neural net and deep learning implementations (which are the relevant preparation for possible future study of natural-language processing and LLMs) using Chapters 1-11, 13, 18, 19 and 21 of Grus,* Data Science from Scratch, 2nd Ed.
 
 Term 6 of Academic Year 2024-2025, Deep Springs College
 
