@@ -38,6 +38,9 @@ The chapter we finished with does not attempt to cover the 2017 &ldquo;Attention
 
 You can survey beyond where Grus has taken us in two ways:
 
-(1) Consider how LLMs have changed and will continue to change the workflow of a data scientist by watching from the 15:00 mark in [Doing Data Science in the Time of ChatGPT](https://youtu.be/oyV81rnLSJc?t=900) by Grus. This is a very casual survey that may only serve to cement what you have already discovered you can do with a high-end LLM like Grok 3 or ChatGPT 4.5.
+(1) Consider how LLMs have changed and will continue to change the workflow of a data scientist by watching from the 15:00 mark in [Doing Data Science in the Time of ChatGPT](https://youtu.be/oyV81rnLSJc?t=900) by Grus. This is a casual survey that may only serve to cement what you have already discovered you can do with a current-generation LLM like Grok 3 or ChatGPT 4.5.
 
-(2) Recapitulate what we have done and then look inside the mathematics and implementation of LLMs, without actually implementing any part of them, by watching the seven 3Blue1Brown videos by Grant Sanderson numbered DL1 to DL7. DL is short for "Deep Learning," and the seven videos were published from 2017 to 2024. You will find you can easily skip the first few of Sanderson's videos given what we have already learned from Grus (although you might enjoy the recap), so consider starting with the fifth video of the seven: [Transformers Explained Visually](https://youtu.be/wjZofJX0v4M).
+(2) Recapitulate what we have done and then look inside the mathematics and implementation of LLMs, without actually doing any more implementation, by watching the seven 3Blue1Brown videos by Grant Sanderson numbered DL1 to DL7. DL is short for "Deep Learning," and the seven videos were published from 2017 to 2024. You will find you can easily skip the first few of Sanderson's videos given what we have already learned from Grus (although you might enjoy the recap), so consider starting with the fifth video of the seven: [Transformers Explained Visually](https://youtu.be/wjZofJX0v4M).
+
+If at some point, you are interested a concise and mathematically-sophisticated review of all that we have done (and then some), consider [A high-bias, low-variance introduction to Machine Learning for physicists](./references/MachineLearningForPhysicists.pdf).
+
