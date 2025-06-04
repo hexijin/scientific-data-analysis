@@ -25,7 +25,7 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 #### Week 6 &mdash; Machine Learning &mdash; Neural Networks &mdash; Start Deep Learning
 
 * June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
-* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; Good prepartion for your coding assessment, would be to do this real-time coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (you build the code with Grus, pausing the video whenever you need to catch up with him) &mdash; This real-time coding session will also give you a blindingly fast overview of Chapters 18 and 19
+* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; Good prepartion for your coding assessment, would be to do this real-time coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the video whenever you need to catch up with him) &mdash; This real-time coding session will also give you a blindingly fast overview of Chapters 18 and 19
 
 #### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
 
@@ -33,7 +33,7 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 
 #### Looking Beyond
 
-Although the chapter we finished with did not attempt to cover the 2017 [Attention is All You Need](https://arxiv.org/abs/1706.03762) paper, Grus has almost perfectly set you up for a second-semester course in deep learning and LLMs that almost every computer science department is now going to have on offer. Before taking such a course, you can review and survey beyond where Grus has taken us in several ways:
+Although the chapter we finished with did not attempt to cover the 2017 "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" paper, Grus has almost perfectly set you up for a second-semester course in deep learning and LLMs that almost every computer science department is now going to have on offer. Before taking such a course, you can review and survey beyond where Grus has taken us in several ways:
 
 (1) If at some point, you are interested in a concise and mathematically-sophisticated review of all that we have done (and then some), consider [A high-bias, low-variance introduction to Machine Learning for physicists](./references/MachineLearningForPhysicists.pdf).
 
@@ -41,4 +41,4 @@ Although the chapter we finished with did not attempt to cover the 2017 [Attenti
 
 (3) Recapitulate what we have done and then look inside the mathematics and implementation of LLMs, without actually doing any more implementation, by watching all seven of the 3Blue1Brown videos by Grant Sanderson. Sanderson's mathematics visualizations are unequaled, and I enjoy watching them even when he is presenting something I already understand, but perhaps the first few in the series are not worth your time given how much we have covered in Grus. The last few will certainly be worthwhile. 
 
-(4) How this is going to affect industry after industry is anybody's guess, but a recent and informed guess (from venture capitalist Mark Andreesen) is here: https://youtu.be/OHWnPOKh_S0?feature=shared&t=11849 (the link deliberately starts you over three hours into the video).
+(4) How this is going to affect industry after industry is anybody's guess, but a recent and informed guess (from venture capitalist Marc Andreessen) is in this late-2024 [Lex Fridman interview of Marc Andreessen](https://youtu.be/OHWnPOKh_S0?feature=shared&t=11849) (the link deliberately jumps you to a point over three hours into the video).
