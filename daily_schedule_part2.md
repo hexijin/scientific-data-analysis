@@ -25,7 +25,7 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 #### Week 6 &mdash; Machine Learning &mdash; Neural Networks &mdash; Start Deep Learning
 
 * June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
-* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; Good prepartion for your coding assessment, would be to do this real-time coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing (you build the code with Grus, pausing the video whenever you need to catch up, because he is fast): [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) &mdash; The real-time coding sessions will also give you a blindingly fast overview of Chapters 18 and 19
+* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; Good prepartion for your coding assessment, would be to do this real-time coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (you build the code with Grus, pausing the video whenever you need to catch up with him) &mdash; This real-time coding session will also give you a blindingly fast overview of Chapters 18 and 19
 
 #### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
 

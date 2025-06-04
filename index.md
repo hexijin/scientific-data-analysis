@@ -12,8 +12,6 @@ Mentor: [Prof. Brian Hill](../index.html)
 
 Student: Hexi Jin (DS 23)
 
-Auditor: Jeremy Choy (DS 24)
-
 ## Independent Study Application and Preliminary Syllabus
 
 * PDF of [Independent Study Application](./IndependentStudyApplication.pdf)
@@ -22,7 +20,7 @@ Auditor: Jeremy Choy (DS 24)
 ## Required Materials
 
 * Imad Pasha, *Astronomical Python*
-    * The examples use data hosted at [https://zenodo.org/records/10732223](https://zenodo.org/records/10732223)
+    * Pasha's examples use data hosted at [https://zenodo.org/records/10732223](https://zenodo.org/records/10732223)
 * Joel Grus, *Data Science from Scratch, 2nd Edition*
 
 ## Actual Daily Schedules (Kept Retrospectively)
