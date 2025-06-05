@@ -27,3 +27,8 @@ Student: Hexi Jin (DS 23)
 
 * [Daily Schedule - Part 1](./daily_schedule_part1.html)
 * [Daily Schedule - Part 2](./daily_schedule_part2.html)
+
+## Notes (mostly code samples)
+
+* [Brian's Notes](./brians_notes.html)
+* [Hexi's Notes](./hexi/index.html)
