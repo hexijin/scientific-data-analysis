@@ -1,5 +1,5 @@
 import math
-from typing import List
+from typing import List, Tuple, Callable
 
 # PDF p. 82
 
@@ -88,3 +88,69 @@ assert distance([0, 1, 2, 3, 4, 5], [1, 2, 5, 6, 6, 4]) == 5
 # Another type alias
 Matrix = List[List[float]]
 
+a = [[1, 2, 3], [4, 5, 6]]    # 2 rows and 3 columns
+b = [[1, 2], [3, 4], [5, 6]]  # 3 rows and 2 columns
+
+def shape(m: Matrix) -> Tuple[int, int]:
+    """Returns (# of rows, # of columns)"""
+    num_rows = len(m)
+    num_cols = len(m[0] if m else 0)   # of elements in first row
+    return num_rows, num_cols
+
+assert shape(a) == (2, 3)
+
+def get_row(m: Matrix, i: int) -> Vector:
+    """Returns the row at index i"""
+    return m[i]
+
+def get_column(m: Matrix, j: int) -> Vector:
+    """Returns the column at index j"""
+    return [m_i[j] for m_i in m]
+
+assert get_column(b, 0) == [1, 3, 5]
+assert get_column(b, 1) == [2, 4, 6]
+
+def make_matrix(num_rows: int,
+                num_cols: int,
+                entry_fn: Callable[[int, int], float]) -> Matrix:
+    """
+    Returns a matrix of size (num_rows, num_cols)
+    whose (i, j)-th entry is entry_fn(i, j)
+    """
+    return [[entry_fn(i, j)
+             for j in range(num_cols)]
+            for i in range(num_rows)]
+
+# PDF p. 89
+
+def identity_matrix(n: int) -> Matrix:
+    return make_matrix(n, n, lambda i, j: 1 if i == j else 0)
+
+assert identity_matrix(5) == [[1, 0, 0, 0, 0],
+                              [0, 1, 0, 0, 0],
+                              [0, 0, 1, 0, 0],
+                              [0, 0, 0, 1, 0],
+                              [0, 0, 0, 0, 1]]
+
+data = [[70, 170, 40],
+        [65, 120, 26],
+        [77, 250, 19],
+        # ....
+        ]
+
+friendships = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (3, 4),
+               (4, 5), (5, 6), (5, 7), (6, 8), (7, 8), (8, 9)]
+
+friend_matrix = [[0, 1, 1, 0, 0, 0, 0, 0, 0, 0],  # user 0
+                 [1, 0, 1, 1, 0, 0, 0, 0, 0, 0],  # user 1
+                 [1, 1, 0, 1, 0, 0, 0, 0, 0, 0],  # user 2
+                 [0, 1, 1, 0, 1, 0, 0, 0, 0, 0],  # user 3
+                 [0, 0, 0, 1, 0, 1, 0, 0, 0, 0],  # user 4
+                 [0, 0, 0, 0, 1, 0, 1, 1, 0, 0],  # user 5
+                 [0, 0, 0, 0, 0, 1, 0, 0, 1, 0],  # user 6
+                 [0, 0, 0, 0, 0, 1, 0, 0, 1, 0],  # user 7
+                 [0, 0, 0, 0, 0, 0, 1, 1, 0, 1],  # user 8
+                 [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]]  # user 9
+
+assert friend_matrix[0][2] == 1, "0 and 2 are friends"
+assert friend_matrix[0][8] == 0, "0 and 8 are not friends"
