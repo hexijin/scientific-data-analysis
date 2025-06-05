@@ -13,5 +13,5 @@ Mostly in the form of Jupyter notebooks for each Chapter of Pasha:
 
 Code (in PyCharm projects) for each Chapter of Grus:
 
-* June 3 &mdash; [Ch. 3: Visualizing Data](./grus/ch03/grus_ch03_code.py)
-* June 6 &mdash; [Ch. 4: Linear Algebra](./grus/ch04/grus_ch04_code.py) &mdash; NOT YET STARTED: [Ch. 5](./grus/ch05/grus_ch05_code.py) and [Ch. 6:](./grus/ch06/grus_ch06_code.py)
+* June 3 &mdash; Ch. 3: Visualizing Data [implementation](./grus/ch03/grus_ch03_code.py)
+* June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/ch04/grus_ch04_code.py) and [tests](./grus/ch04/grus_ch04_code.py) &mdash; NOT YET STARTED: [Ch. 5](./grus/ch05/grus_ch05_code.py) and [Ch. 6:](./grus/ch06/grus_ch06_code.py)
