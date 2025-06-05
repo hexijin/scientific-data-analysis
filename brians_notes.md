@@ -2,6 +2,8 @@
 
 ## Part 1
 
+Mostly in the form of Jupyter notebooks for each Chapter of Pasha:
+
 * May 21 &mdash; [&sect;5.2 A Simple Plot](./pasha/c05/c05s02.ipynb), [&sect;5.4 Subplots](./pasha/c05/c05s04.ipynb), [&sect;5.5 Adjusting Marker Properties](./pasha/c05/c05s05.ipynb), [&sect;5.6 Adjusting Ticks](./pasha/c05/c05s06.ipynb), [&sect;5.7 Adjusting Fonts and Font Sizes](./pasha/c05/c05s07.ipynb), [&sect;5.8 Multiple Subplots](./pasha/c05/c05s08.ipynb), [&sect;5.9 Subplot Mosaic](./pasha/c05/c05s09.ipynb), [&sect;5.10 Research Example: Displaying a Best Fit](./pasha/c05/c05s10.ipynb), [&sect;5.11 Error Bars](./pasha/c05/c05s11.ipynb), [&sect;5.12 Plotting *n*-Dimensional Data](./pasha/c05/c05s12.ipynb), [&sect;5.13 Color Bars](./pasha/c05/c05s13.ipynb) &mdash; [PS02](./psets/ps02.ipynb)
 * May 25 &mdash; [&sect;6.5 Research Example: An Exoplanet Transit](./pasha/c06/c06s05.ipynb)
 * May 28 &mdash; [&sect;7.2 Numerical Integration](./pasha/c07/c07s02.ipynb), [&sect;7.3 Optimization](./pasha/c07/c07s03.ipynb), [&sect;7.4 Statistics](./pasha/c07/c07s04.ipynb)) &mdash; [PS03](./psets/ps03.ipynb))
@@ -12,4 +14,4 @@
 Code (in PyCharm projects) for each Chapter of Grus:
 
 * June 3 &mdash; [Ch. 3: Visualizing Data](./grus/ch03/grus_ch03_code.py)
-* June 6 &mdash; [Ch. 4: Linear Algebra](./grus/ch04/grus_ch04_code.py)
+* June 6 &mdash; [Ch. 4: Linear Algebra](./grus/ch04/grus_ch04_code.py) &mdash; NOT YET STARTED: [Ch. 5](./grus/ch05/grus_ch05_code.py) and [Ch. 6:](./grus/ch06/grus_ch06_code.py)
