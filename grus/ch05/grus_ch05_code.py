@@ -3,4 +3,5 @@
 # where the ch04 project code is
 from grus_ch04_code import *
 
-assert [5, 7, 9] == add([1, 2, 3], [4, 5, 6])
+def mean(xs: List[float]) -> float:
+    return sum(xs) / len(xs)
