@@ -67,9 +67,9 @@ def covariance(xs: List[float], ys: List[float]) -> float:
 
 def correlation(xs: List[float], ys: List[float]) -> float:
     """Measures how much xs and ys vary in tandem about their means"""
-    stdev_x = standard_deviation(xs)
-    stdev_y = standard_deviation(ys)
-    if stdev_x > 0 and stdev_y > 0:
-        return covariance(xs, ys) / (stdev_x * stdev_y)
+    std_dev_x = standard_deviation(xs)
+    std_dev_y = standard_deviation(ys)
+    if std_dev_x > 0 and std_dev_y > 0:
+        return covariance(xs, ys) / (std_dev_x * std_dev_y)
     else:
         return 0

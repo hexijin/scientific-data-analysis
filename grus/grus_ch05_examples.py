@@ -1,6 +1,5 @@
 from collections import Counter
 import matplotlib.pyplot as plt
-from grus_ch05_code import median
 
 num_friends = [100, 49, 41, 40, 25, 21, 21, 19, 19, 18, 18, 16, 15, 15, 15,
                15, 14, 14, 13, 13, 13, 13, 12, 12, 11, 10, 10, 10, 10, 10, 10,
