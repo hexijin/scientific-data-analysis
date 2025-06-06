@@ -11,7 +11,7 @@ Mostly in the form of Jupyter notebooks for each chapter of Pasha:
 
 ## Part 2 &mdash; Notes for Data Science and Machine Learning
 
-Code and tests in a separate PyCharm project for each chapter of Grus (due to the frequent dependency of chapters on prior chapters, it might have been cleaner and easier to put all of the Grus chapters into a single PyCharm project):
+Code and tests in a PyCharm project with some files for each chapter of Grus:
 
-* June 3 &mdash; Ch. 3: Visualizing Data [implementation](./grus/ch03/grus_ch03_code.py)
-* June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/ch04/grus_ch04_code.py) and [tests](./grus/ch04/grus_ch04_test.py) &mdash; STARTED: Ch. 5: Statistics [implementation](./grus/ch05/grus_ch05_code.py), [tests](./grus/ch05/grus_ch05_test.py), and [examples](./grus/ch05/grus_ch05_examples.py) &mdash; NOT YET STARTED: Ch. 6: Statistics [implementation](./grus/ch06/grus_ch06_code.py)
+* June 3 &mdash; Ch. 3: Visualizing Data [implementation](./grus/grus_ch03_code.py)
+* June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/grus_ch04_code.py) and [tests](./grus/grus_ch04_test.py) &mdash; STARTED: Ch. 5: Statistics [implementation](./grus/grus_ch05_code.py), [tests](./grus/grus_ch05_test.py), and [examples](./grus/grus_ch05_examples.py) &mdash; NOT YET STARTED: Ch. 6: Statistics [implementation](./grus/grus_ch06_code.py)
