@@ -14,4 +14,4 @@ Mostly in the form of Jupyter notebooks for each chapter of Pasha:
 Code and tests in a PyCharm project with some files for each chapter of Grus:
 
 * June 3 &mdash; Ch. 3: Visualizing Data [examples](./grus/grus_ch03_examples.py)
-* June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/grus_ch04_code.py) and [tests](./grus/grus_ch04_test.py) &mdash; Ch. 5: Statistics [implementation](./grus/grus_ch05_code.py), [tests](./grus/grus_ch05_test.py), and [examples](./grus/grus_ch05_examples.py) &mdash; NOT FINISHED: Ch. 6: Probability [implementation](./grus/grus_ch06_examples.py)
+* June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/grus_ch04_code.py) and [tests](./grus/grus_ch04_test.py) &mdash; Ch. 5: Statistics [implementation](./grus/grus_ch05_code.py), [tests](./grus/grus_ch05_test.py), and [examples](./grus/grus_ch05_examples.py) &mdash; NOT FINISHED: Ch. 6: Probability [implementation](./grus/grus_ch06_code.py) and [examples](./grus/grus_ch06_examples.py)
