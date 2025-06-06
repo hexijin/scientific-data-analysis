@@ -1,7 +1,7 @@
 import unittest
 
 from grus_ch05_code import *
-from grus_ch05_examples import num_friends
+from grus_ch05_examples import num_friends, daily_minutes, daily_hours
 
 class TestStatisticsFunctions(unittest.TestCase):
 
@@ -41,4 +41,34 @@ class TestStatisticsFunctions(unittest.TestCase):
         result = data_range(num_friends)
         self.assertEqual(99, result)
 
-# PDF p. 98
+    # PDF p. 98
+
+    def test_variance(self):
+        result = variance(num_friends)
+        self.assertAlmostEqual(81.54, result, 2)
+
+    def test_standard_deviation(self):
+        result = standard_deviation(num_friends)
+        self.assertAlmostEqual(9.03, result, 2)
+
+    def test_interquartile_range(self):
+        result = interquartile_range(num_friends)
+        self.assertEqual(6, result)
+
+    # PDF p. 100
+
+    def test_covariance_with_daily_minutes(self):
+        result = covariance(daily_minutes, num_friends)
+        self.assertAlmostEqual(22.43, result, 2)
+
+    def test_covariance_with_daily_hours(self):
+        result = covariance(daily_hours, num_friends)
+        self.assertAlmostEqual(22.43 / 60, result, 2)
+
+    def test_correlation_with_daily_minutes(self):
+        result = correlation(daily_minutes, num_friends)
+        self.assertAlmostEqual(0.25, result, 2)
+
+    def test_correlation_with_daily_hours(self):
+        result = correlation(daily_hours, num_friends)
+        self.assertAlmostEqual(0.25, result, 2)

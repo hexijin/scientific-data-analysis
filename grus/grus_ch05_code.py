@@ -1,6 +1,8 @@
 from collections import Counter
+from typing import List
+import math
 
-from grus_ch04_code import *
+from grus_ch04_code import sum_of_squares, dot
 
 def mean(xs: List[float]) -> float:
     return sum(xs) / len(xs)
@@ -36,3 +38,38 @@ def data_range(xs: List[float]) -> float:
     return max(xs) - min(xs)
 
 # PDF p. 98
+
+def de_mean(xs: List[float]) -> List[float]:
+    """Translate xs by subtracting its mean"""
+    xs_mean = mean(xs)
+    return [x - xs_mean for x in xs]
+
+def variance(xs: List[float]) -> float:
+    """Almost the average squared deviation from the mean"""
+    n = len(xs)
+    assert n >= 2
+    deviations = de_mean(xs)
+    return sum_of_squares(deviations) / (n - 1)
+
+def standard_deviation(xs: List[float]) -> float:
+    """The standard deviation is the square root of the variance"""
+    return math.sqrt(variance(xs))
+
+def interquartile_range(xs: List[float]) -> float:
+    """Returns the difference between the 75th and 25th percentiles"""
+    return quantile(xs, 0.75) - quantile(xs, 0.25)
+
+def covariance(xs: List[float], ys: List[float]) -> float:
+    assert len(xs) == len(ys)
+    return dot(de_mean(xs), de_mean(ys)) / (len(xs) - 1)
+
+# PDF p. 100
+
+def correlation(xs: List[float], ys: List[float]) -> float:
+    """Measures how much xs and ys vary in tandem about their means"""
+    stdev_x = standard_deviation(xs)
+    stdev_y = standard_deviation(ys)
+    if stdev_x > 0 and stdev_y > 0:
+        return covariance(xs, ys) / (stdev_x * stdev_y)
+    else:
+        return 0
