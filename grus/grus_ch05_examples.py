@@ -1,5 +1,6 @@
 from collections import Counter
 import matplotlib.pyplot as plt
+from grus_ch05_code import median
 
 num_friends = [100, 49, 41, 40, 25, 21, 21, 19, 19, 18, 18, 16, 15, 15, 15,
                15, 14, 14, 13, 13, 13, 13, 12, 12, 11, 10, 10, 10, 10, 10, 10,
@@ -25,3 +26,14 @@ plt.show()
 
 # PDF p. 94
 
+num_points = len(num_friends)
+# largest_value = max(num_friends)
+# smallest_value = min(num_friends)
+
+sorted_values = sorted(num_friends)
+smallest_value = sorted_values[0]
+second_smallest_value = sorted_values[1]
+largest_value = sorted_values[-1]
+second_largest_value = sorted_values[-2]
+
+print(median(num_friends))
