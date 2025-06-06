@@ -63,3 +63,21 @@ largest_value = sorted_values[-1]
 second_largest_value = sorted_values[-2]
 
 # PDF p. 101
+
+plt.scatter(num_friends, daily_minutes)
+plt.xlabel("minutes per day")
+plt.ylabel("# of friends")
+plt.title("Correlation with an Outlier")
+plt.show()
+
+outlier = num_friends.index(100)
+
+num_friends_good = [x for i, x in enumerate(num_friends) if i != outlier]
+daily_minutes_good = [x for i, x in enumerate(daily_minutes) if i != outlier]
+daily_hours_good = [dm / 60 for dm in daily_minutes_good]
+
+plt.scatter(num_friends_good, daily_minutes_good)
+plt.xlabel("minutes per day")
+plt.ylabel("# of friends")
+plt.title("Correlation After Removing the Outlier")
+plt.show()
