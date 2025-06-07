@@ -15,13 +15,12 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 * June 4 &mdash; Chapters 1-3: Another excellent review of Python and Matplotlib which will help systematize your understanding of the language features you were using in Pasha's book &mdash; The assignment is to do the review of the three chapters, but to completely stop using Jupyter or Jupyter lab, and instead get everything working in PyCharm Professional Edition (free for students) or VS Code (but I have zero experience with that) &mdash; When Grus says (at the beginning of Chapter 2) that you should not be tampering with your base Python environment, he is completely correct (so learn how to make a venv that you could call grus or dsfs and then switch to it &mdash; if you didn't already do that for working through Pasha)
 * June 7 &mdash; Chapters 4-6: Linear Algebra (wherein Grus introduces his Vector and Matrix implementations which could have been classes, or could have leveraged numpy, but which he craftily used type aliases, because that was the simplest way to implement from scratch), Statistics, and Probability (due to having taken last fall's Bayesian Statistics class, the math in Chapters 5 and 6 will be review)
 
-#### *ALL OF MY NOTES AND SOLUTIONS HAVE BEEN MOVED HERE: [Brian's Notes](./brians_notes.html)*
-
 #### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
+
+* June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent &mdash; Make a local repo from the magic hexijin.github.io GitHub repo, put an index.md file in it, and then push to origin main &mdash; The only remaining step to having your own home page at [hexijin.githup.io](https://hexijin.github.io/index.html) is to enable GitHub pages on the magic repo &mdash; In the meantime, you can go straight to [this notes page](https://hexijin.github.io/scientific-data-analysis/hexi/index.html)
 
 #### === BELOW THIS DIVISION IS GOAL/TENTATIVE PLAN &mdash; NOT ACTUAL ===
 
-* June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent
 * June 14 &mdash; Chapters 9 and 10: Getting and Working with Data
 
 #### Week 6 &mdash; Machine Learning &mdash; Neural Networks &mdash; Start Deep Learning
