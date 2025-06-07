@@ -1,0 +1,17 @@
+## Looking Beyond
+
+Back to [Course home page](./index.html)
+
+See also [Daily Schedule - Part 2](./daily_schedule_part2.html)
+
+#### Looking Beyond
+
+Although the chapter we finished with did not attempt to cover the 2017 "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" paper, Grus has almost perfectly set you up for a second-semester course in deep learning and LLMs that almost every computer science department is now going to have on offer. Before taking such a course, you can review and survey beyond where Grus has taken us in several ways:
+
+(1) If at some point, you are interested in a concise and mathematically-sophisticated review of all that we have done (and then some), consider [A high-bias, low-variance introduction to Machine Learning for physicists](./references/MachineLearningForPhysicists.pdf).
+
+(2) Grus considers how LLMs have changed and will continue to change the workflow of a data scientist starting at the 15:00 mark in this late-2023 video [Doing Data Science in the Time of ChatGPT](https://youtu.be/oyV81rnLSJc?t=900). This is a casual survey that may only serve to cement what you have already discovered you can do with a current-generation LLM like Grok 3 or ChatGPT 4.5.
+
+(3) Recapitulate what we have done and then look inside the mathematics and implementation of LLMs, without actually doing any more implementation, by watching all seven of the 3Blue1Brown videos by Grant Sanderson. Sanderson's mathematics visualizations are exceptional, and I enjoy watching them even when he is presenting something I already understand, but perhaps the first few in the series are not worth your time given how much we have covered in Grus. The last few in the series will certainly be worthwhile. 
+
+(4) How this is going to affect industry after industry is anybody's guess, but a recent and informed guess (from venture capitalist Marc Andreessen) is in this late-2024 [Lex Fridman interview of Marc Andreessen](https://youtu.be/OHWnPOKh_S0?feature=shared&t=11849) (the link deliberately jumps you to a point over three hours into the video).
