@@ -17,7 +17,7 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 
 #### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
 
-* June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent &mdash; Make a local repo from the magic hexijin.github.io GitHub repo, put an index.md file in it, and then push to origin main &mdash; The only remaining step to having your own home page at [hexijin.githup.io](https://hexijin.github.io/index.html) is to enable GitHub pages on the magic repo &mdash; In the meantime, you can go straight to [this notes page](https://hexijin.github.io/scientific-data-analysis/hexi/index.html)
+* June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent &mdash; Make a local repo from the magic hexijin.github.io GitHub repo, put an index.md file in it, and then push to origin main &mdash; The only remaining step to having your own home page at [hexijin.github.io](https://hexijin.github.io/index.html) is to enable GitHub pages on the magic repo &mdash; In the meantime, you can go straight to [this notes page](https://hexijin.github.io/scientific-data-analysis/hexi/index.html)
 
 #### === BELOW THIS DIVISION IS GOAL/TENTATIVE PLAN &mdash; NOT ACTUAL ===
 
