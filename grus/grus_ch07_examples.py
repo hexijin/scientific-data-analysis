@@ -1,42 +1,27 @@
+from grus_ch07_code import (normal_approximation_to_binomial,
+                            normal_two_sided_bounds, normal_probability_between)
 
-# PDF p. 124
+# PDF p. 126
 
-from matplotlib import pyplot as plt
-import random
-from grus_ch07_code import difference_quotient
-from grus_ch04_code import distance, add, scalar_multiply
+mu_0, sigma_0 = normal_approximation_to_binomial(1000, 0.5)
 
-# PDF p. 142
+# I am getting 463, 658, but Grus says we should get 469, 531
+lower_bound, upper_bound = normal_two_sided_bounds(0.95, mu_0, sigma_0)
 
-def square(x: float) -> float:
-    return x ** 2
+# PDF bottom of p. 126
 
-def derivative(x: float) -> float:
-    return 2 * x
+lo, hi = normal_two_sided_bounds(0.95, mu_0, sigma_0)
 
-xs = range(-10, 11)
-actuals = [derivative(x) for x in xs]
-estimates = [difference_quotient(square, x, h=0.001) for x in xs]
+print(f'Lower bound: {lower_bound}, upper bound: {upper_bound}')
 
-# plot to show they're basically the same
+# The mu and sigma based on p = 0.55
+mu_1, sigma_1 = normal_approximation_to_binomial(1000, 0.55)
 
-plt.title("Actual derivatives vs. Estimates")
-plt.plot(xs, actuals, 'rx', label='Actual')      # red  x
-plt.plot(xs, estimates, 'b+', label='Estimate')  # blue +
-plt.legend(loc=9)
-plt.show()
+print(f'Mean for p=0.55: {mu_1}, sigma: {sigma_1}')
 
-# PDF p. 145
+# A type 2 error means we fail to reject the null hypothesis,
+# which will happen when X is still in our original interval
+type_2_probability = normal_probability_between(lo, hi, mu_1, sigma_1)
+power = 1 - type_2_probability    # 0.887
 
-def sum_of_squares_gradient(v: Vector) -> Vector:
-    return [2 * v_i for v_i in v]
-
-# pick a random starting point
-v = [random.uniform(-10, 10) for i in range(3)]
-
-for epoch in range(1000):
-    grad = sum_of_squares_gradient(v)
-    v = gradient_step(-0.01)
-    print(epoch, v)
-
-assert distance(v, [0, 0, 0]) < 0.001  # v should be close to 0
+print(f'Power: {power}')
