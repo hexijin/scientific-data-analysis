@@ -75,6 +75,7 @@ def minibatches(dataset: List[T],
                 shuffle: bool = True) -> Iterator[List[T]]:
     """Generates `batch_size`-sized minibatches from the dataset"""
     # Start indexes 0, batch_size, 2 * batch_size, ...
+    assert len(dataset) % batch_size == 0
     batch_starts = [start for start in range(0, len(dataset), batch_size)]
 
     if shuffle: random.shuffle(batch_starts)  # shuffle the batches
