@@ -1,5 +1,7 @@
 from typing import Tuple
 import math
+import numpy as np
+import matplotlib.pyplot as plt
 from grus_ch06_code import normal_cdf, inverse_normal_cdf
 
 # PDF p. 124
@@ -12,6 +14,10 @@ def normal_approximation_to_binomial(n: int, p: float) -> Tuple[float, float]:
     mu = n * p
     sigma = math.sqrt(n * p * (1 - p))
     return mu, sigma
+
+def normal_probability_below(hi: float, mu: float = 0, sigma: float = 1)\
+        -> float:
+    return normal_cdf(hi, mu, sigma)
 
 def normal_probability_above(lo: float,
                              mu: float = 0,
@@ -61,3 +67,74 @@ def normal_two_sided_bounds(probability: float,
     # lower bound should have tail_probability below it
     lower_bound = normal_upper_bound(tail_probability, mu, sigma)
     return lower_bound, upper_bound
+
+# PDF pp. 127-128
+
+def two_sided_p_value(x: float, mu: float = 0, sigma: float = 1) -> float:
+    """
+    How likely are we to see a value at least as extreme as x (in either
+    direction) if our values are from an N(mu, sigma) distribution?
+    """
+    if x >= mu:
+        return 2 * normal_probability_above(x, mu, sigma)
+    else:
+        return 2 * normal_probability_below(x, mu, sigma)
+
+# PDF p. 133
+
+def estimated_parameters(N: int, n: int) -> Tuple[float, float]:
+    p = n / N
+    sigma = math.sqrt(p * (1 - p) / N)
+    return p, sigma
+
+def a_b_test_statistic(N_a: int, n_a: int, N_b: int, n_b: int) -> float:
+    p_a, sigma_a = estimated_parameters(N_a, n_a)
+    p_b, sigma_b = estimated_parameters(N_b, n_b)
+    return (p_b - p_a) / math.sqrt(sigma_a ** 2 + sigma_b ** 2)
+
+# PDF p. 134
+
+def beta_normalization(a_param: float, b_param: float) -> float:
+    return (math.gamma(a_param) * math.gamma(b_param) /
+            math.gamma(a_param + b_param))
+
+def beta_pdf(x: float, a_param: float, b_param: float) -> float:
+    if x <= 0 or x >= 1:
+        return 0
+    else:
+        return (x ** (a_param - 1) * (1 - x) ** (b_param - 1) /
+                beta_normalization(a_param, b_param))
+
+
+# Create the plot
+xs = np.linspace(0, 1, 101)
+plt.figure(figsize=(8, 8))
+
+# Plot the beta PDF for each parameter pair
+for param in [(1, 1), (10, 10), (4, 16), (16, 4)]:
+    a, b = param
+    ys = [beta_pdf(x, a, b) for x in xs]
+    plt.plot(xs, ys, label=f'Beta({a}, {b})')
+
+# Add labels and title
+plt.xlabel('x')
+plt.ylabel('PDF')
+plt.ylim(0, 6)
+plt.legend(loc='upper center')
+plt.show()
+
+# Create another plot
+plt.figure(figsize=(8, 8))
+
+# Plot the beta PDF for three more parameter pairs
+for param in [(4, 8), (23, 27), (33, 17)]:
+    a, b = param
+    ys = [beta_pdf(x, a, b) for x in xs]
+    plt.plot(xs, ys, label=f'Beta({a}, {b})')
+
+# Add labels and title
+plt.xlabel('x')
+plt.ylabel('PDF')
+plt.ylim(0, 6)
+plt.legend(loc='upper left')
+plt.show()
