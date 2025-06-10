@@ -1,10 +1,9 @@
-import math
 
 from matplotlib import pyplot as plt
 import random
 from typing import TypeVar, List, Iterator
 from grus_ch08_code import difference_quotient, gradient_step
-from grus_ch04_code import Vector, distance, scalar_multiply, vector_mean
+from grus_ch04_code import Vector, distance, vector_mean
 
 # PDF p. 142
 
@@ -43,9 +42,8 @@ assert distance(v, [0, 0, 0]) < 0.001  # v should be close to 0
 
 # PDF p. 146
 
-xs = range(-50, 50)
-ys = [20 * x + 5 for x in xs]
-inputs = zip(xs, ys)
+# x ranges from -50 to 49, y is always 20 * x + 5
+inputs = [(x, 20 * x + 5) for x in range(-50, 50)]
 
 def linear_gradient(x: float, y: float, theta: Vector) -> Vector:
     slope, intercept = theta
@@ -76,7 +74,7 @@ def minibatches(dataset: List[T],
                 batch_size: int,
                 shuffle: bool = True) -> Iterator[List[T]]:
     """Generates `batch_size`-sized minibatches from the dataset"""
-    # start indexes 0, batch_size, 2 * batch_size, ...
+    # Start indexes 0, batch_size, 2 * batch_size, ...
     batch_starts = [start for start in range(0, len(dataset), batch_size)]
 
     if shuffle: random.shuffle(batch_starts)  # shuffle the batches
@@ -85,11 +83,14 @@ def minibatches(dataset: List[T],
         end = start + batch_size
         yield dataset[start:end]
 
-theta = [random.uniform(-1, 1), random.uniform(-1, 1)]
+epoch_theta = [random.uniform(-1, 1), random.uniform(-1, 1)]
+
+learning_rate = 0.001
 
 for epoch in range(1000):
-    for batch in minibatches(minibatches(inputs, batch_size=20):
-        grad = vector_mean([linear_gradient(x, y, theta) for x, y in batch])
-        theta = gradient_step(theta, grad, -learning_rate)
+    for batch in minibatches(minibatches(inputs, 20)):
+        epoch_grad = vector_mean([linear_gradient(x, y, epoch_theta)
+                                  for x, y in batch])
+        epoch_theta = gradient_step(epoch_theta, epoch_grad, -learning_rate)
         if epoch % 100 == 0:
-            print(epoch, theta)
+            print(epoch_theta, epoch_theta)
