@@ -15,4 +15,11 @@ Code and tests in a PyCharm project with some files for each chapter of Grus:
 
 * June 3 &mdash; Ch. 3: Visualizing Data [examples](./grus/grus_ch03_examples.py)
 * June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/grus_ch04_code.py) and [tests](./grus/grus_ch04_test.py) &mdash; Ch. 5: Statistics [implementation](./grus/grus_ch05_code.py), [tests](./grus/grus_ch05_test.py), and [examples](./grus/grus_ch05_examples.py) &mdash; Ch. 6: Probability [implementation](./grus/grus_ch06_code.py) and [examples](./grus/grus_ch06_examples.py)
-* June 10 &mdash; Ch 7: Hypothesis and Inference [implementation](./grus/grus_ch07_code.py) and [examples](./grus/grus_ch07_examples.py) &mdash; Ch 8: Gradient Descent [implementation](./grus/grus_ch08_code.py) and [examples](./grus/grus_ch08_examples.py)
+* June 10 &mdash; THERE ARE STILL BUGS IN MY VERSIONS OF GRUS'S CODE FOR CHAPTERS 7 and 8 &mdash; Ch 7: Hypothesis and Inference [implementation](./grus/grus_ch07_code.py) and [examples](./grus/grus_ch07_examples.py) &mdash; Ch 8: Gradient Descent [implementation](./grus/grus_ch08_code.py) and [examples](./grus/grus_ch08_examples.py)
+* June 14 &mdash; Chapters 9 and 10: Getting and Working with Data
+* June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
+* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning
+
+#### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
+
+* June 25 &mdash; Chapter 21: Natural Language Processing &mdash; Watch the fifth of the 3Blue1Brown videos, [Transformers Explained Visually](https://youtu.be/wjZofJX0v4M), by Grant Sanderson numbered DL1 to DL7 &mdash; "DL" is short for "Deep Learning," and the seven videos were published from 2017 to 2024 &mdash; The fifth video gives you alook into the 2017 transformers revolution, and at what you would study next if you want to keep getting closer to the state of the art of machine learning and LLMs
