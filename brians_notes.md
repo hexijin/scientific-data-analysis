@@ -15,4 +15,4 @@ Code and tests in a PyCharm project with some files for each chapter of Grus:
 
 * June 3 &mdash; Ch. 3: Visualizing Data [examples](./grus/grus_ch03_examples.py)
 * June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/grus_ch04_code.py) and [tests](./grus/grus_ch04_test.py) &mdash; Ch. 5: Statistics [implementation](./grus/grus_ch05_code.py), [tests](./grus/grus_ch05_test.py), and [examples](./grus/grus_ch05_examples.py) &mdash; Ch. 6: Probability [implementation](./grus/grus_ch06_code.py) and [examples](./grus/grus_ch06_examples.py)
-* June 10 &mdash; Ch 7: Hypothesis and Inference [implementation](./grus/grus_ch07_code.py) and [examples](./grus/grus_ch07_examples.py) &mdash; STARTED Ch 8: Gradient Descent [implementation](./grus/grus_ch08_code.py) and [examples](./grus/grus_ch08_examples.py)
+* June 10 &mdash; Ch 7: Hypothesis and Inference [implementation](./grus/grus_ch07_code.py) and [examples](./grus/grus_ch07_examples.py) &mdash; Ch 8: Gradient Descent [implementation](./grus/grus_ch08_code.py) and [examples](./grus/grus_ch08_examples.py)
