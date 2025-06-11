@@ -104,37 +104,3 @@ def beta_pdf(x: float, a_param: float, b_param: float) -> float:
     else:
         return (x ** (a_param - 1) * (1 - x) ** (b_param - 1) /
                 beta_normalization(a_param, b_param))
-
-
-# Create the plot
-xs = np.linspace(0, 1, 101)
-plt.figure(figsize=(8, 8))
-
-# Plot the beta PDF for each parameter pair
-for param in [(1, 1), (10, 10), (4, 16), (16, 4)]:
-    a, b = param
-    ys = [beta_pdf(x, a, b) for x in xs]
-    plt.plot(xs, ys, label=f'Beta({a}, {b})')
-
-# Add labels and title
-plt.xlabel('x')
-plt.ylabel('PDF')
-plt.ylim(0, 6)
-plt.legend(loc='upper center')
-plt.show()
-
-# Create another plot
-plt.figure(figsize=(8, 8))
-
-# Plot the beta PDF for three more parameter pairs
-for param in [(4, 8), (23, 27), (33, 17)]:
-    a, b = param
-    ys = [beta_pdf(x, a, b) for x in xs]
-    plt.plot(xs, ys, label=f'Beta({a}, {b})')
-
-# Add labels and title
-plt.xlabel('x')
-plt.ylabel('PDF')
-plt.ylim(0, 6)
-plt.legend(loc='upper left')
-plt.show()
