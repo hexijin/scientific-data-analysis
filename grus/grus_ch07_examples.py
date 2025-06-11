@@ -107,3 +107,38 @@ print(f'two_sided_p_value(z)', two_sided_p_value(z))
 z = a_b_test_statistic(1000, 200, 1000, 150)
 print(f'z = {z}')
 print(f'two_sided_p_value(z)', two_sided_p_value(z))
+
+# PDF p. 135
+
+# Create the plot
+xs = np.linspace(0, 1, 101)
+plt.figure(figsize=(8, 8))
+
+# Plot the beta PDF for each parameter pair
+for param in [(1, 1), (10, 10), (4, 16), (16, 4)]:
+    a, b = param
+    ys = [beta_pdf(x, a, b) for x in xs]
+    plt.plot(xs, ys, label=f'Beta({a}, {b})')
+
+# Add labels and title
+plt.xlabel('x')
+plt.ylabel('PDF')
+plt.ylim(0, 6)
+plt.legend(loc='upper center')
+plt.show()
+
+# Create another plot
+plt.figure(figsize=(8, 8))
+
+# Plot the beta PDF for three more parameter pairs
+for param in [(4, 8), (23, 27), (33, 17)]:
+    a, b = param
+    ys = [beta_pdf(x, a, b) for x in xs]
+    plt.plot(xs, ys, label=f'Beta({a}, {b})')
+
+# Add labels and title
+plt.xlabel('x')
+plt.ylabel('PDF')
+plt.ylim(0, 6)
+plt.legend(loc='upper left')
+plt.show()
