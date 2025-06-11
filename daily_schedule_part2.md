@@ -18,12 +18,12 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 #### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
 
 * June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent &mdash; Make a local repo from the magic hexijin.github.io GitHub repo, put an index.md file in it, and then push to origin main &mdash; The only remaining step to having your own home page at [hexijin.github.io](https://hexijin.github.io/index.html) is to enable GitHub pages on the magic repo &mdash; In the meantime, you can go straight to [this notes page](https://hexijin.github.io/scientific-data-analysis/hexi/index.html) &mdash; For more advanced reading, Grus recommends this [Overview of Gradient Descent][https://www.ruder.io/optimizing-gradient-descent/] by Eric Ruder
-* June 14 &mdash; Chapters 9 and 10: Getting and Working with Data
+* June 14 &mdash; Chapters 9 and 10: Getting and Working with Data 
 
 #### Week 6 &mdash; Machine Learning &mdash; Neural Networks &mdash; Start Deep Learning
 
 * June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes &mdash; Good prepartion for your June 20 coding assessment, would be to do this live coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding demonstration whenever you need to catch up with him) &mdash; This live coding session will also give you a blindingly-fast advance preview of Chapters 18 and 19
-* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning 
+* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning
 
 #### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
 
