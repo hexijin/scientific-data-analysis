@@ -37,7 +37,7 @@ def inverse_normal_cdf(p: float,
 
     while hi_z - low_z > tolerance:
         mid_z = (low_z + hi_z) / 2
-        mid_p = normal_pdf(mid_z)
+        mid_p = normal_cdf(mid_z)
         if mid_p < p:
             low_z = mid_z
         else:
