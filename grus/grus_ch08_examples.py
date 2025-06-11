@@ -36,7 +36,6 @@ v = [random.uniform(-10, 10) for i in range(3)]
 for epoch in range(1000):
     grad_value = sum_of_squares_gradient(v)
     v = gradient_step(v, grad_value, -0.01)
-    print(epoch, v)
 
 assert distance(v, [0, 0, 0]) < 0.001  # v should be close to 0
 
@@ -78,7 +77,8 @@ def minibatches(dataset: List[T],
     assert len(dataset) % batch_size == 0
     batch_starts = [start for start in range(0, len(dataset), batch_size)]
 
-    if shuffle: random.shuffle(batch_starts)  # shuffle the batches
+    if shuffle:
+        random.shuffle(batch_starts)  # shuffle the batches
 
     for start in batch_starts:
         end = start + batch_size
@@ -89,9 +89,14 @@ epoch_theta = [random.uniform(-1, 1), random.uniform(-1, 1)]
 learning_rate = 0.001
 
 for epoch in range(1000):
-    for batch in minibatches(minibatches(inputs, 20)):
+    for batch in minibatches(inputs, 20):
         epoch_grad = vector_mean([linear_gradient(x, y, epoch_theta)
                                   for x, y in batch])
         epoch_theta = gradient_step(epoch_theta, epoch_grad, -learning_rate)
-        if epoch % 100 == 0:
-            print(epoch_theta, epoch_theta)
+
+example_slope, example_intercept = epoch_theta
+
+print(f'slope: {example_slope}, intercept: {example_intercept}')
+
+assert 19.9 < example_slope < 20.1
+assert 4.9 < example_intercept < 5.1
