@@ -3,6 +3,8 @@ from typing import List, Dict
 from collections import Counter
 import math
 import matplotlib.pyplot as plt
+from grus_ch04_code import Matrix, Vector, make_matrix
+from grus_ch05_code import correlation
 from grus_ch06_code import inverse_normal_cdf
 
 # PDF p. 174
@@ -28,3 +30,12 @@ def random_normal() -> float:
     return inverse_normal_cdf(random())
 
 # PDF p. 178
+
+def correlation_matrix(data: List[Vector]) -> Matrix:
+    """
+    Returns the len(data) x len(data) matrix whose (i, j)-th entry
+    is the correlation between data[i] and data[j]
+    """
+    return make_matrix(len(data), len(data), lambda i, j: correlation(data[i], data[j]))
+
+# PDF. p. 184
