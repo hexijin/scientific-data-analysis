@@ -1,6 +1,6 @@
 # Brian's Notes
 
-## Part 1 &mdash; Notes for Scientific Data Analysis
+## Notes for Part 1, Scientific Data Analysis
 
 Mostly in the form of Jupyter notebooks for each chapter of Pasha:
 
@@ -9,14 +9,14 @@ Mostly in the form of Jupyter notebooks for each chapter of Pasha:
 * May 28 &mdash; [&sect;7.2 Numerical Integration](./pasha/c07/c07s02.ipynb), [&sect;7.3 Optimization](./pasha/c07/c07s03.ipynb), [&sect;7.4 Statistics](./pasha/c07/c07s04.ipynb)) &mdash; [PS03](./psets/ps03.ipynb))
 * June 1 &mdash; [&sect;8.2 Units and Constants](./pasha/c08/c08s02.pdf), [&sect;8.3 Cosmological Calculations](./pasha/c08/c08s03.ipynb), [&sect;8.4 Coordinates](./pasha/c08/c08s04.ipynb), [&sect;8.6 Research Example: Automatic Offsets](./pasha/c08/c08s06.ipynb), [&sect;8.7 Research Example: Handling Astronomical Images](./pasha/c08/c08s07.ipynb)) &mdash; [PS04](./psets/ps04.ipynb)
 
-## Part 2 &mdash; Notes for Data Science and Machine Learning
+## Notes for Part 2 &mdash, Data Science and Machine Learning
 
 Code, tests, and examples in a PyCharm project with some files for each chapter of Grus:
 
 * June 3 &mdash; Ch. 3: Visualizing Data [examples](./grus/grus_ch03_examples.py)
 * June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/grus_ch04_code.py) and [tests](./grus/grus_ch04_test.py) &mdash; Ch. 5: Statistics [implementation](./grus/grus_ch05_code.py), [tests](./grus/grus_ch05_test.py), and [examples](./grus/grus_ch05_examples.py) &mdash; Ch. 6: Probability [implementation](./grus/grus_ch06_code.py) and [examples](./grus/grus_ch06_examples.py)
-* June 10 &mdash; Ch. 7: Hypothesis and Inference [implementation](./grus/grus_ch07_code.py) and [examples](./grus/grus_ch07_examples.py) &mdash; Ch. 8: Gradient Descent [implementation](./grus/grus_ch08_code.py) and [examples](./grus/grus_ch08_examples.py) &mdash; Also some simple gradient descent code I wrote [quadratic fit](./grus/quadratic_fit.py) and [quadratic fit example](./grus/quadratic_fit_example.py)
-* June 14 &mdash; Ch. 9 : Getting Data [implementation](./grus/grus_ch09_code.py) and [examples](./grus/grus_ch09_examples.py) &mdash; NOT YET DONE Ch. 10 Working with Data [implementation](./grus/grus_ch10_code.py) and [examples](./grus/grus_ch10_examples.py) 
-* June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
+* June 11 &mdash; Ch. 7: Hypothesis and Inference [implementation](./grus/grus_ch07_code.py) and [examples](./grus/grus_ch07_examples.py) &mdash; Ch. 8: Gradient Descent [implementation](./grus/grus_ch08_code.py) and [examples](./grus/grus_ch08_examples.py) &mdash; Also some simple gradient descent code I wrote [quadratic fit](./grus/quadratic_fit.py) and [quadratic fit example](./grus/quadratic_fit_example.py)
+* June 15 &mdash; Ch. 9 : Getting Data [implementation](./grus/grus_ch09_code.py) and [examples](./grus/grus_ch09_examples.py) &mdash; NOT YET COMPLETE Ch. 10 Working with Data [implementation](./grus/grus_ch10_code.py) and [examples](./grus/grus_ch10_examples.py) 
+* June 17 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
 * June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning
 * June 25 &mdash; Chapter 21: Natural Language Processing
