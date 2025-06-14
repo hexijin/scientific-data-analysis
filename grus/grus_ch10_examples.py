@@ -1,5 +1,5 @@
-from typing import List, Dict, NamedTuple
-from collections import namedtuple
+from typing import List, NamedTuple  # , Dict (not being used except in commented out code)
+# from collections import namedtuple (not being used except in commented out code)
 import random
 import datetime
 from matplotlib import pyplot as plt
