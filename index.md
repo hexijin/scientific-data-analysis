@@ -24,6 +24,7 @@ Student: Hexi Jin (DS 23)
 * Imad Pasha, *Astronomical Python*
     * Pasha's examples use data hosted at [https://zenodo.org/records/10732223](https://zenodo.org/records/10732223)
 * Joel Grus, *Data Science from Scratch, 2nd Edition*
+    * We may need to copy over resources from Grus's GitHub repo for the book [https://github.com/joelgrus/data-science-from-scratch](https://github.com/joelgrus/data-science-from-scratch)
 
 ### Optional
 
