@@ -18,15 +18,20 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 #### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
 
 * June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent &mdash; Make a local repo from the magic hexijin.github.io GitHub repo, put an index.md file in it, and then push to origin main &mdash; The only remaining step to having [your own home page](https://hexijin.github.io) is to enable GitHub pages in this repo &mdash; For more advanced reading, Grus recommends this [Overview of Gradient Descent](https://www.ruder.io/optimizing-gradient-descent/) by Eric Ruder
-* June 15 &mdash; Chapters 9 and 10: Getting and Working with Data
+* June 15 &mdash; Chapters 9 and 10: Getting and Working with Data (including subtracting the mean and dividing by the standard deviation to get rescaled data sets)
 
-#### Week 6 &mdash; Machine Learning &mdash; Neural Networks &mdash; Start Deep Learning
+#### Week 6 &mdash; Machine Learning &mdash; Linear Regression
 
-* June 17 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes &mdash; Since classes are something we haven't done much with, but they are on your coding assessment, find some quick introduction to classes, such as Section 1.16 of [Python Distilled](https://www.dabeaz.com/python-distilled/) by Beazley &mdash; The three things that are generally considered important about classes are encapsulation (controlled access to data), inheritance (behavior is inherited from superclasses in the class heirarchy and extended by subclasses), and polymorphism (behavior can be overriden in subclasses) &mdash; Chapter 7 of Beazley is a much more complete introduction to classes
-* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; Do this live coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding demonstration whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast version of Chapters 18 and 19
+* June 19 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes: Machine Learning and Naive Bayes (and you may need to pick up some material from Chapter 12 on k-Nearest Neighbors which we are otherwise skipping)
 
-#### Week 7 &mdash; Continue Deep Learning &mdash; Introduction to Natural Language Processing
+#### Since Python's classes are something we haven't done much with, but they are on your June 17-18 coding assessment, find some quick introduction to classes (aka "object-oriented programming"), such as Section 1.16 of [Python Distilled](https://www.dabeaz.com/python-distilled/) by Beazley &mdash; The three things that are generally considered important about object-oriented programming are encapsulation (controlled access to data), inheritance (behavior is inherited from superclasses in the class heirarchy and extended by subclasses), and polymorphism (behavior can be overriden in subclasses) &mdash; Chapters 4 and 7 of Beazley are a much more complete introduction to object-oriented programming
 
-* June 25 &mdash; Chapter 21: Natural Language Processing &mdash; Watch the fifth of the 3Blue1Brown videos, [Transformers Explained Visually](https://youtu.be/wjZofJX0v4M), by Grant Sanderson numbered DL1 to DL7 &mdash; "DL" is short for "Deep Learning," and the seven videos were published from 2017 to 2024 &mdash; The fifth video gives you alook into the 2017 transformers revolution, and at what you would study next if you want to keep getting closer to the state of the art of machine learning and LLMs
+* June 21 &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression
+
+#### Week 7 &mdash; Neural Networks &mdash; Deep Learning
+
+#### In the interest of getting to Neural Networks and Deep Learning in our final week, we will skip Chapters 16 and 17 on Logistic Regression and Decision Trees
+
+* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; Also do this live coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding demonstration whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast version of Chapters 18 and 19
 
 See also [Looking Beyond](./looking_beyond.html)

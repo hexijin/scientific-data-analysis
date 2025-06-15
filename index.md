@@ -17,11 +17,17 @@ Student: Hexi Jin (DS 23)
 * PDF of [Independent Study Application](./IndependentStudyApplication.pdf)
 * PDF of [Preliminary Syllabus](./PreliminarySyllabus.pdf)
 
-## Required Materials
+## Materials
+
+### Required
 
 * Imad Pasha, *Astronomical Python*
     * Pasha's examples use data hosted at [https://zenodo.org/records/10732223](https://zenodo.org/records/10732223)
 * Joel Grus, *Data Science from Scratch, 2nd Edition*
+
+### Optional
+
+* Both Pasha and Grus include adequate introductions to Python features as they use them, but you may want a more systematic introduction to use as a reference. An excellent one is David Beazley, *Python Distilled.* It is actually a distillation and update of his time-tested *Python: Essential Reference,* which was becoming overly-long as the Python language feature set kept growing.
 
 ## Actual Daily Schedules (Kept Retrospectively)
 
