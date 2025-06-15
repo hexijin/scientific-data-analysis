@@ -1,10 +1,10 @@
 from random import random
-from typing import List, Dict
+from typing import List, Dict, Tuple
 from collections import Counter
 import math
 import matplotlib.pyplot as plt
-from grus_ch04_code import Matrix, Vector, make_matrix
-from grus_ch05_code import correlation
+from grus_ch04_code import Matrix, Vector, make_matrix, vector_mean
+from grus_ch05_code import correlation, standard_deviation
 from grus_ch06_code import inverse_normal_cdf
 
 # PDF p. 174
@@ -38,4 +38,26 @@ def correlation_matrix(data: List[Vector]) -> Matrix:
     """
     return make_matrix(len(data), len(data), lambda i, j: correlation(data[i], data[j]))
 
-# PDF. p. 184
+# PDF. p. 191
+
+def scale(data: List[Vector]) -> Tuple[Vector, Vector]:
+    """returns the mean and standard deviation for each position"""
+    dim = len(data[0])
+
+    means = vector_mean(data)
+    stdevs = [standard_deviation([vector[i] for vector in data]) for i in range(dim)]
+
+    return means, stdevs
+
+def rescale(data: List[Vector]) -> List[Vector]:
+    dim = len(data[0])
+    means, stdevs = scale(data)
+    rescaled = [v[:] for v in data]
+    for v in rescaled:
+        for i in range(dim):
+            if stdevs[i] > 0:
+                v[i] = (v[i] - means[i]) / stdevs[i]
+
+    return rescaled
+
+# PDF p. 196

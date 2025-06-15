@@ -3,10 +3,16 @@ from typing import List, NamedTuple  # , Dict (not being used except in commente
 import random
 import datetime
 from matplotlib import pyplot as plt
+from dataclasses import dataclass
+from dateutil.parser import parse
+from typing import Optional
+import re
+import csv
 
+from grus_ch04_code import distance
 from grus_ch05_code import correlation
 from grus_ch06_code import inverse_normal_cdf
-from grus_ch10_code import plot_histogram, random_normal
+from grus_ch10_code import plot_histogram, random_normal, scale, rescale
 
 # PDF p. 175
 
@@ -125,3 +131,111 @@ assert stock_price.date == datetime.date(2018, 12, 14)
 assert stock_price.closing_price == 106.03
 
 # PDF p. 183
+
+# YET ANOTHER APPROACH TO BE AWARE OF AND GRUS WILL NOT BE USING -- used dataclasses
+
+@dataclass
+class StockPrice2:
+    symbol: str
+    date: datetime.date
+    closing_price: float
+
+    def is_high_tech(self) -> bool:
+        return self.symbol in ['MSFT', 'GOOG', 'FB', 'AMZN', 'AAPL']
+
+price2 = StockPrice2('MSFT', datetime.date(2018, 12, 14), 106.04)
+
+assert price2.symbol == 'MSFT'
+assert price2.date == datetime.date(2018, 12, 14)
+assert price2.closing_price == 106.04
+assert price2.is_high_tech()
+
+# stock split
+
+price2.closing_price /= 2
+assert price2.closing_price == 53.02
+
+# typo
+price2.cosing_Price = 75
+
+def parse_row(row: List[str]) -> StockPrice:
+    symbol, date, closing_price = row
+    return StockPrice(symbol=symbol,
+                      date=parse(date).date(),
+                      closing_price=float(closing_price))
+
+# Now test our function
+
+stock = parse_row(["MSFT", "2018-12-14", "106.03"])
+
+assert stock.symbol == "MSFT"
+assert stock.date == datetime.date(2018, 12, 14)
+assert stock.closing_price == 106.03
+
+def try_parse_row(row: List[str]) -> Optional[StockPrice]:
+    symbol, date_, closing_price_ = row
+
+    # Stock symbol should be all capital letters
+    if not re.match(r"^[A-Z]+$", symbol):
+        return None
+
+    try:
+        date = parse(date_).date()
+    except ValueError:
+        return None
+
+    try:
+        closing_price = float(closing_price_)
+    except ValueError:
+        return None
+
+    return StockPrice(symbol, date, closing_price)
+
+# Should return None due to errors
+assert try_parse_row(["MSFT0", "2018-12-14", "106.03"]) is None
+assert try_parse_row(["MSFT", "2018-12--14", "106.03"]) is None
+assert try_parse_row(["MSFT", "2018-12-14", "x"]) is None
+
+# But should return same as before if data is good
+assert try_parse_row(["MSFT", "2018-12-14", "106.03"]) == stock
+
+# For example, if we have comma-delimited stock prices with bad data:
+
+data: List[StockPrice] = []
+
+with open("../grus_resources/brief_comma_delimited_stock_prices.csv") as f:
+    reader = csv.reader(f)
+    for r in reader:
+        maybe_stock = try_parse_row(r)
+        if maybe_stock is None:
+            print(f"skipping invalid row: {r}")
+        else:
+            data.append(maybe_stock)
+
+assert len(data) == 5
+
+# I SKIPPED THE MANIPULATING DATA SECTION
+
+# PDF p. 190
+
+# a_to_b = distance([63, 150], [67, 160])      # 10.77
+# a_to_c = distance([63, 150], [70, 171])      # 22.14
+# b_to_c = distance([67, 160], [70, 171])      # 11.40
+
+a_to_b = distance([160, 150], [170.2, 160])      # 14.28
+a_to_c = distance([160, 150], [177.8, 171])      # 27.53
+b_to_c = distance([170.2, 160], [177.8, 171])    # 13.37
+
+# PDF p. 191
+
+vectors = [[-3, -1, 1], [-1, 0, 1], [1, 1, 1]]
+means, stdevs = scale(vectors)
+
+assert means == [-1, 0, 1]
+assert stdevs == [2, 1, 0]
+
+means, stdevs = scale(rescale(vectors))
+assert means == [0, 0, 1]
+assert stdevs == [1, 1, 0]
+
+# PDF p. 196
