@@ -1,7 +1,5 @@
 from typing import Tuple
 import math
-import numpy as np
-import matplotlib.pyplot as plt
 from grus_ch06_code import normal_cdf, inverse_normal_cdf
 
 # PDF p. 124
