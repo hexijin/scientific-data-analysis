@@ -1,4 +1,6 @@
 import random
+import numpy as np
+import matplotlib.pyplot as plt
 from typing import List
 from grus_ch07_code import *
 

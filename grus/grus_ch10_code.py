@@ -1,11 +1,14 @@
 from random import random
-from typing import List, Dict, Tuple
+from typing import Dict
 from collections import Counter
-import math
+
 import matplotlib.pyplot as plt
-from grus_ch04_code import Matrix, Vector, make_matrix, vector_mean
+# scratch.linear_algebra is in grus_ch04_code
+from grus_ch04_code import *
 from grus_ch05_code import correlation, standard_deviation
 from grus_ch06_code import inverse_normal_cdf
+# scratch.gradient_step is in grus_ch08_code
+from grus_ch08_code import gradient_step
 
 # PDF p. 174
 
@@ -61,3 +64,59 @@ def rescale(data: List[Vector]) -> List[Vector]:
     return rescaled
 
 # PDF p. 196
+
+def de_mean(data: List[Vector]) -> List[Vector]:
+    """Re-centers the data to have mean 0 in every dimension"""
+    mean = vector_mean(data)
+    return [subtract(vector, mean) for vector in data]
+
+def direction(w: Vector) -> Vector:
+    mag = magnitude(w)
+    return [w_i / mag for w_i in w]
+
+def directional_variance(data: List[Vector], w: Vector) -> float:
+    """Returns the variance of data in the direction of w"""
+    w_dir = direction(w)
+    return sum(dot(v, w_dir)**2 for v in data)
+
+def directional_variance_gradient(data: List[Vector], w: Vector) -> Vector:
+    """The gradient of directional variance with respect to w"""
+    w_dir = direction(w)
+    return [sum(2 * dot(v, w_dir) * v[i] for v in data) for i in range(len(w))]
+
+def first_principal_component(data: List[Vector],
+                              n: int = 100,
+                              step_size: float = 0.1) -> Vector:
+    # Start with a random guess
+    guess = [1.0 for _ in data[0]]
+    for _ in range(n):
+        # dv = directional_variance(data, guess)
+        gradient = directional_variance_gradient(data, guess)
+        guess = gradient_step(guess, gradient, step_size)
+    return direction(guess)
+
+def project(v: Vector, w: Vector) -> Vector:
+    """return the projection of v onto the direction w"""
+    projection_length = dot(v, w)
+    return scalar_multiply(projection_length, w)
+
+def remove_projection_from_vector(v: Vector, w: Vector) -> Vector:
+    """Projects v onto w and subtracts the result from v"""
+    return subtract(v, project(v, w))
+
+def remove_projection(data: List[Vector], w: Vector) -> List[Vector]:
+    return [remove_projection_from_vector(v, w) for v in data]
+
+def pca(data: List[Vector], num_components: int) -> List[Vector]:
+    components: List[Vector] = []
+    for _ in range(num_components):
+        component = first_principal_component(data)
+        components.append(component)
+        data = remove_projection(data, component)
+    return components
+
+def transform_vector(v: Vector, components: List[Vector]) -> Vector:
+    return [dot(v, w) for w in components]
+
+def transform(data: List[Vector], components: List[Vector]) -> List[Vector]:
+    return [transform_vector(v, components) for v in data]
