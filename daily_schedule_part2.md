@@ -24,7 +24,7 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 
 * June 19 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes: Machine Learning and Naive Bayes (and you may need to pick up some material from Chapter 12 on k-Nearest Neighbors which we are otherwise skipping)
 
-#### Since Python's classes are something we haven't done much with, but they are on your June 17-18 coding assessment, find some quick introduction to classes (aka "object-oriented programming"), such as Section 1.16 of *Python Distilled* by Beazley &mdash; The three things that are generally considered important about object-oriented programming are encapsulation (controlled access to data), inheritance (behavior is inherited from superclasses in the class heirarchy and extended by subclasses), and polymorphism (behavior can be overriden in subclasses) &mdash; Chapters 4 and 7 of Beazley are a much more complete introduction to object-oriented programming
+#### Since Python's classes are something we haven't done much with, but they are on your June 17-18 coding assessment, do a quick introduction to classes (aka "object-oriented programming") such as Section 1.16 of *Python Distilled* by Beazley &mdash; The three things that are generally considered important about object-oriented programming are encapsulation (controlled access to the object's data), inheritance (behavior is inherited from superclasses in the class heirarchy and extended by subclasses), and polymorphism (behavior can be overriden in subclasses) &mdash; Chapters 4 and 7 of Beazley are a much more complete introduction to object-oriented programming
 
 * June 21 &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression
 
