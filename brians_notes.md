@@ -16,7 +16,7 @@ Code, tests, and examples in a PyCharm project with some files for each chapter 
 * June 3 &mdash; Ch. 3: Visualizing Data [examples](./grus/grus_ch03_examples.py)
 * June 6 &mdash; Ch. 4: Linear Algebra [implementation](./grus/grus_ch04_code.py) and [tests](./grus/grus_ch04_test.py) &mdash; Ch. 5: Statistics [implementation](./grus/grus_ch05_code.py), [tests](./grus/grus_ch05_test.py), and [examples](./grus/grus_ch05_examples.py) &mdash; Ch. 6: Probability [implementation](./grus/grus_ch06_code.py) and [examples](./grus/grus_ch06_examples.py)
 * June 11 &mdash; Ch. 7: Hypothesis and Inference [implementation](./grus/grus_ch07_code.py) and [examples](./grus/grus_ch07_examples.py) &mdash; Ch. 8: Gradient Descent [implementation](./grus/grus_ch08_code.py) and [examples](./grus/grus_ch08_examples.py) &mdash; Also some simple gradient descent code I wrote [quadratic fit](./grus/quadratic_fit.py) and [quadratic fit example](./grus/quadratic_fit_example.py)
-* June 15 &mdash; Ch. 9 : Getting Data [implementation](./grus/grus_ch09_code.py) and [examples](./grus/grus_ch09_examples.py) &mdash; NOT YET COMPLETE Ch. 10 Working with Data [implementation](./grus/grus_ch10_code.py) and [examples](./grus/grus_ch10_examples.py) 
-* June 17 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
-* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning
-* June 25 &mdash; Chapter 21: Natural Language Processing
+* June 15 &mdash; Ch. 9 : Getting Data [implementation](./grus/grus_ch09_code.py) and [examples](./grus/grus_ch09_examples.py) &mdash; Ch. 10 Working with Data [implementation](./grus/grus_ch10_code.py) and [examples](./grus/grus_ch10_examples.py) 
+* June 18 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes
+* June 21 &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression
+* June 25 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning
