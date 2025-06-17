@@ -2,9 +2,9 @@
 
 *An independent study with two parts:*
 
-*Part 1: Consolidate and advance understanding of mainstream and cutting edge scientific data analysis techniques using Chapters 1-8 of Pasha,* Astronomical Python
+*Part 1: Consolidate and advance our understanding of mainstream and cutting edge scientific data analysis techniques using Chapters 1-8 of Pasha,* Astronomical Python
 
-*Part 2: Survey data science techniques up to and including neural net and deep learning implementations (which are the relevant preparation for a subsequent study of natural-language processing and LLMs) using Chapters 1-11, 13, 18, 19 and 21 of Grus,* Data Science from Scratch, 2nd Ed.
+*Part 2: Survey data science techniques up to and including neural net and deep learning implementations (which are the relevant preparation for a subsequent study of natural-language processing and LLMs) using Chapters 1-11, 13-15, and 18-19 Grus,* Data Science from Scratch, 2nd Ed.
 
 Term 6 of Academic Year 2024-2025, Deep Springs College
 
@@ -15,7 +15,7 @@ Student: Hexi Jin (DS 23)
 ## Independent Study Application and Preliminary Syllabus
 
 * PDF of [Independent Study Application](./IndependentStudyApplication.pdf)
-* PDF of [Preliminary Syllabus](./PreliminarySyllabus.pdf)
+* PDF of [Syllabus](./ScientificDataAnalysisSyllabus.pdf)
 
 ## Materials
 
@@ -28,7 +28,7 @@ Student: Hexi Jin (DS 23)
 
 ### Optional
 
-* Both Pasha and Grus include adequate introductions to Python features as they use them, but you may want a more systematic introduction to use as a reference. An excellent one is David Beazley, *Python Distilled.* It is actually a distillation and update of his time-tested *Python: Essential Reference,* which was becoming overly-long as the Python language feature set kept growing.
+* Both Pasha and Grus include adequate introductions to Python features as they use them, but you may want a more systematic introduction to use as a reference. An excellent one is David Beazley, *Python Distilled.* It is actually a distillation and update of his time-tested *Python: Essential Reference,* which was growing overly-long as the Python language feature set kept growing.
 
 ## Actual Daily Schedules (Kept Retrospectively)
 

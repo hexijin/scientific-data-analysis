@@ -18,20 +18,15 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 #### Week 5 &mdash; Optimization (aka Minimization and Maximization) &mdash; Working with Data
 
 * June 11 &mdash; Chapters 7 and 8: Hypotheses &amp; Inference and Gradient Descent &mdash; Make a local repo from the magic hexijin.github.io GitHub repo, put an index.md file in it, and then push to origin main &mdash; The only remaining step to having [your own home page](https://hexijin.github.io) is to enable GitHub pages in this repo &mdash; For more advanced reading, Grus recommends this [Overview of Gradient Descent](https://www.ruder.io/optimizing-gradient-descent/) by Eric Ruder
-* June 15 &mdash; Chapters 9 and 10: Getting and Working with Data (including subtracting the mean and dividing by the standard deviation to get rescaled data sets)
+* June 15 &mdash; Chapters 9 and 10: Getting and Working with Data (including subtracting the mean and dividing by the standard deviation to get rescaled data sets, and a load of utilities for doing principal component analysis, that Grus somewhat-too-rapidly introduced at the end of Chapter 10)
 
 #### Week 6 &mdash; Machine Learning &mdash; Linear Regression
 
 * June 19 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes: Machine Learning and Naive Bayes (and you may need to pick up some material from Chapter 12 on k-Nearest Neighbors which we are otherwise skipping)
-
-#### Since Python's classes are something we haven't done much with, but they are on your June 17-18 coding assessment, do a quick introduction to classes (aka "object-oriented programming") such as Section 1.16 of *Python Distilled* by Beazley &mdash; The three things that are generally considered important about object-oriented programming are encapsulation (controlled access to the object's data), inheritance (behavior is inherited from superclasses in the class heirarchy and extended by subclasses), and polymorphism (behavior can be overriden in subclasses) &mdash; Chapters 4 and 7 of Beazley are a much more complete introduction to object-oriented programming
-
 * June 21 &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression
 
 #### Week 7 &mdash; Neural Networks &mdash; Deep Learning
 
-#### In the interest of getting to Neural Networks and Deep Learning in our final week, we will skip Chapters 16 and 17 on Logistic Regression and Decision Trees
-
-* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning &mdash; Also do this live coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding demonstration whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast version of Chapters 18 and 19
+* June 21 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning (in the interest of getting to Neural Networks and Deep Learning in our final week, we are skipping Chapters 16 and 17 on Logistic Regression and Decision Trees) &mdash; Also as part of this week's material, do this live coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding demonstration whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast version of Chapters 18 and 19
 
 See also [Looking Beyond](./looking_beyond.html)
