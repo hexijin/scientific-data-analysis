@@ -22,7 +22,7 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 
 #### Week 6 &mdash; Machine Learning &mdash; Linear Regression
 
-* June 19 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes: Machine Learning and Naive Bayes (and you may need to pick up some material from Chapter 12 on k-Nearest Neighbors which we are otherwise skipping)
+* June 19 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes (and you may need to pick up some material from Chapter 12 on k-Nearest Neighbors which we are otherwise skipping)
 * June 21 &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression
 
 #### Week 7 &mdash; Neural Networks &mdash; Deep Learning
