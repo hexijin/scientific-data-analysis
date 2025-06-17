@@ -30,3 +30,18 @@ def accuracy(tp: int, fp: int, fn: int, tn: int) -> float:
     return correct / total
 
 # PDF p. 211
+
+def precision(tp: int, fp: int, _fn: int, _tn: int) -> float:
+    return tp / (tp + fp)
+
+def recall(tp: int, _fp: int, fn: int, _tn: int) -> float:
+    return tp / (tp + fn)
+
+def harmonic_mean(r1: float, r2: float) -> float:
+    # The harmonic mean of r1 and r2 is by definition 1 / ((1/r1 + 1/r2) / 2)
+    return 1 / ((1 / r1 + 1 / r2) / 2)
+
+def f1_score(tp: int, fp: int, fn: int, tn: int) -> float:
+    p = precision(tp, fp, fn, tn)
+    r = recall(tp, fp, fn, tn)
+    return harmonic_mean(p, r)

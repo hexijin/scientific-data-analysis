@@ -26,3 +26,13 @@ assert all(y == 2 * x for x, y, in zip(x_test, y_test))
 assert accuracy(70, 4930, 13930, 981070) == 0.98114
 
 # PDF p. 211
+
+assert precision(70, 4930, 13930, 981070) == 0.014
+
+assert recall(70, 4930, 13930, 981070) == 0.005
+
+# Ordinary mean
+assert (1 / 40 + 1 / 10) / 2 == 1 / 16
+
+# Harmonic mean
+assert harmonic_mean(1/40, 1/10) == 1/25
