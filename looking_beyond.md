@@ -4,6 +4,10 @@ Back to [Course home page](./index.html)
 
 See also [Daily Schedule - Part 2](./daily_schedule_part2.html)
 
+#### Supplementary Material
+
+Since Python's classes are something we didn't do much with, but they are often considered part of an introduction to Python, you could do a quick introduction to classes (aka "object-oriented programming") such as Section 1.16 of *Python Distilled* by Beazley. The three things that are generally considered important about object-oriented programming are encapsulation (controlled access to the object's data), inheritance (behavior is inherited from superclasses in the class heirarchy and extended by subclasses), and polymorphism (behavior can be overriden in subclasses). Chapters 4 and 7 of Beazley are a much more complete introduction to object-oriented programming.
+
 #### Looking Beyond
 
 Although the chapter we finished with did not attempt to cover the 2017 "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" paper, Grus has almost perfectly set you up for a second-semester course in natural-language processing and LLMs that almost every computer science department is now or shortly going to have on offer. Before taking such a course, you can review and survey beyond where Grus has taken us in several ways:
