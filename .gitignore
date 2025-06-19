@@ -5,4 +5,5 @@
 
 hexi/Astropython/.virtual_documents/
 
-
+# Re-download the spam corpus by uncommenting some code in grus_ch13_examples.py
+grus_resources/spam_data
