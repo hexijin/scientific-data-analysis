@@ -10,7 +10,7 @@ Since Python's classes are something we didn't do much with, but they are often 
 
 #### Looking Beyond
 
-Although the chapter we finished with did not attempt to cover the 2017 "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" paper, Grus has almost perfectly set you up for a second-semester course in natural-language processing and LLMs that almost every computer science department is now or shortly going to have on offer. Before taking such a course, you can review and survey beyond where Grus has taken us in several ways:
+Although the chapter we finished with did not attempt to cover the 2017 "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" paper, Grus has almost perfectly set you up for a second-semester course in natural-language processing and LLMs that almost every computer science department is now or shortly going to have on offer. Before or instead of taking such a course, you can review or go beyond where we have gotten as of Chapter 19 of Grus in multiple ways:
 
 (1) A concise and mathematically-sophisticated review of all that we have done (and then some) is ["A high-bias, low-variance introduction to Machine Learning for physicists"](./references/MachineLearningForPhysicists.pdf).
 
@@ -18,4 +18,6 @@ Although the chapter we finished with did not attempt to cover the 2017 "[Attent
 
 (3) Recapitulate what we have done and then look inside the mathematics and implementation of LLMs, without actually doing any more implementation, by watching all seven of the 3Blue1Brown videos by Grant Sanderson. Sanderson's mathematics visualizations are a joy to watch even when he is presenting something you already understand, but perhaps the first four in the series are not worth your time given how much we have covered in Grus. The last three in the series ([Transformers Explained Visually](https://youtu.be/wjZofJX0v4M), [Attention in Transformers](https://youtu.be/eMlx5fFNoYc), and [How Might LLMs Store Facts?](https://youtu.be/9-Jl0dxWQs8)) will certainly be new and worthwhile. 
 
-(4) How this is going to affect industry after industry is anybody's guess, but a recent and informed guess (from venture capitalist Marc Andreessen) is in this late-2024 [Lex Fridman interview of Marc Andreessen](https://youtu.be/OHWnPOKh_S0?feature=shared&t=11849) (the link deliberately jumps you to a point over three hours into the interview).
+(4) How this is going to affect industry after industry is anybody's guess, but a recent and informed guess (from venture capitalist Marc Andreessen) is in this late-2024 [Lex Fridman interview of Marc Andreessen](https://youtu.be/OHWnPOKh_S0?feature=shared&t=11849). (The link deliberately jumps you to a point over three hours into the interview.)
+
+(5) Following up on a recommendation for further reading given at the end of Chapter 19 of Grus, consider the preliminary version of [Deep Learning with Python, Third Edition](https://www.manning.com/books/deep-learning-with-python-third-edition). (The final version of the third edition is estimated to appear September 2025.)

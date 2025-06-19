@@ -23,10 +23,10 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 #### Week 6 &mdash; Machine Learning &mdash; Linear Regression
 
 * June 19 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes (and you may need to pick up some material from Chapter 12 on k-Nearest Neighbors which we are otherwise skipping)
-* June 21 &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression
+* June 21 (meeting time moved to 1pm for this Saturday only) &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression
 
 #### Week 7 &mdash; Neural Networks &mdash; Deep Learning
 
-* June 25 &mdash; Chapters 18 and 19: Neural Networks and Deep Learning (in the interest of getting to Neural Networks and Deep Learning in our final week, we are skipping Chapters 16 and 17 on Logistic Regression and Decision Trees) &mdash; Also as part of this week's material, do this live coding session to see how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding demonstration whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast version of Chapters 18 and 19
+* June 26 (final meeting moved from Wednesday 11am to Thursday 11am) &mdash; Chapters 18 and 19: Neural Networks and Deep Learning (in the interest of getting to Neural Networks and Deep Learning in our final week, we are skipping Chapters 16 and 17 on Logistic Regression and Decision Trees) &mdash; Also as part of this week's material, do this live coding session to get a feeling for how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding demonstration whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast version of Chapters 18 and 19
 
 See also [Looking Beyond](./looking_beyond.html)
