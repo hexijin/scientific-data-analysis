@@ -16,5 +16,5 @@ Code (in PyCharm projects) for each Chapter of Grus:
 
 * The rain
 * in Spain
-* falls approximately
+* approximately else
 * on the plain.
