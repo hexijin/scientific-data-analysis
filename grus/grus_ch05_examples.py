@@ -75,8 +75,8 @@ num_friends_good = [x for i, x in enumerate(num_friends) if i != outlier]
 daily_minutes_good = [x for i, x in enumerate(daily_minutes) if i != outlier]
 daily_hours_good = [dm / 60 for dm in daily_minutes_good]
 
-plt.scatter(num_friends_good, daily_minutes_good)
-plt.xlabel("minutes per day")
-plt.ylabel("# of friends")
-plt.title("Correlation After Removing the Outlier")
-plt.show()
+# plt.scatter(num_friends_good, daily_minutes_good)
+# plt.xlabel("minutes per day")
+# plt.ylabel("# of friends")
+# plt.title("Correlation After Removing the Outlier")
+# plt.show()
