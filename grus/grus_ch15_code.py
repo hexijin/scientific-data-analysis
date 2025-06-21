@@ -1,5 +1,5 @@
 import random
-from typing import List
+from typing import List, TypeVar, Callable
 
 from grus_ch04_code import dot, Vector, vector_mean
 from grus_ch08_code import gradient_step
@@ -46,3 +46,15 @@ def multiple_r_squared(xs: List[Vector], ys: Vector, beta: Vector) -> float:
 
 # PDF p. 253 - Digression: The Bootstrap
 
+X = TypeVar('X')
+Stat = TypeVar('Stat')
+
+def bootstrap_sample(data: List[X]) -> List[X]:
+    return [random.choice(data) for _ in data]
+
+def bootstrap_statistic(data: List[X],
+                        stats_fn: Callable[[List[X]], Stat],
+                        num_samples: int) -> List[Stat]:
+    return [stats_fn(bootstrap_sample(data)) for _ in range(num_samples)]
+
+# PDF p. 257 - Regularization
