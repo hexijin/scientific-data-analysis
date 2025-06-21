@@ -95,7 +95,6 @@ plt.show()
 # Using NamedTuples
 
 import datetime
-
 stock_price = {'closing_price': 102.06, 'date': datetime.date(2014, 8, 29), 'symbol': 'AAPL'}
 
 prices: Dict[datetime.date, float] = {}
