@@ -1,5 +1,5 @@
-from collections import Counter
-import matplotlib.pyplot as plt
+# from collections import Counter
+# import matplotlib.pyplot as plt
 
 num_friends = [100, 49, 41, 40, 25, 21, 21, 19, 19, 18, 18, 16, 15, 15, 15,
                15, 14, 14, 13, 13, 13, 13, 12, 12, 11, 10, 10, 10, 10, 10, 10,
@@ -39,15 +39,15 @@ daily_minutes = [1, 68.77, 51.25, 52.08, 38.36, 44.54, 57.13, 51.4, 41.42,
 
 daily_hours = [dm / 60 for dm in daily_minutes]
 
-friend_counts = Counter(num_friends)
-xs = range(101)
-ys = [friend_counts[x] for x in xs]
-plt.bar(xs, ys)
-plt.axis((0, 101, 0, 25))
-plt.title("Histogram of Friend Counts")
-plt.xlabel("# of friends")
-plt.ylabel("# of people")
-plt.show()
+# friend_counts = Counter(num_friends)
+# xs = range(101)
+# ys = [friend_counts[x] for x in xs]
+# plt.bar(xs, ys)
+# plt.axis((0, 101, 0, 25))
+# plt.title("Histogram of Friend Counts")
+# plt.xlabel("# of friends")
+# plt.ylabel("# of people")
+# plt.show()
 
 # PDF p. 94
 
@@ -63,11 +63,11 @@ second_largest_value = sorted_values[-2]
 
 # PDF p. 101
 
-plt.scatter(num_friends, daily_minutes)
-plt.xlabel("minutes per day")
-plt.ylabel("# of friends")
-plt.title("Correlation with an Outlier")
-plt.show()
+# plt.scatter(num_friends, daily_minutes)
+# plt.xlabel("minutes per day")
+# plt.ylabel("# of friends")
+# plt.title("Correlation with an Outlier")
+# plt.show()
 
 outlier = num_friends.index(100)
 
