@@ -28,7 +28,7 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 #### Week 7 &mdash; Neural Networks &mdash; Deep Learning
 
 * June 23 (additional meeting, Monday 11am) &mdash; Chapter 18: Neural Networks (in the interest of getting to Neural Networks and Deep Learning in our final week, we are skipping Chapters 16 and 17 on Logistic Regression and Decision Trees)
-* June 25 (Wednesday no meeting, but this would be a good time to try the live coding session) &mdash; Get a feeling for how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding session whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast version of our final week of material
+* June 25 (Wednesday no meeting, but this would be a good time to try the live coding session) &mdash; Get a feeling for how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding session whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast presentation of the two chapters we are studying this week
 * June 26 (final meeting moved to Thursday 11am) &mdash; Chapter 19: Deep Learning
 
 See also [Looking Beyond](./looking_beyond.html)

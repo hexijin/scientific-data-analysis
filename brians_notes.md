@@ -19,4 +19,6 @@ Code, tests, and examples in a PyCharm project with some files for each chapter 
 * June 15 &mdash; Ch. 9: Getting Data [implementation](./grus/grus_ch09_code.py) and [examples](./grus/grus_ch09_examples.py) &mdash; Ch. 10: Working with Data [implementation](./grus/grus_ch10_code.py) and [examples](./grus/grus_ch10_examples.py) 
 * June 19 &mdash; Ch. 11: Machine Learning [implementation](./grus/grus_ch11_code.py) and [examples](./grus/grus_ch11_examples.py) &mdash; Ch. 13: Naive Bayes [implementation](./grus/grus_ch13_code.py) and [examples](./grus/grus_ch13_examples.py)
 * June 21 &mdash; Ch. 14: Simple Linear Regression [implementation](./grus/grus_ch14_code.py), [examples](./grus/grus_ch14_examples.py) and [tests](./grus/grus_ch14_test.py) &mdash; Ch. 15: Multiple Regression [implementation](./grus/grus_ch15_code.py) and [examples](./grus/grus_ch15_examples.py)
-* June 25 &mdash; NOT YET STARTED Ch. 18: Neural Networks &mdash; NOT YET STARTED Ch. 19: Deep Learning
+* June 23 &mdash; JUST STARTED Ch. 18: Neural Networks [implementation](./grus/grus_ch18_code.py) and [examples](./grus/grus_ch18_examples.py)
+* June 25 &mdash; NOT YET STARTED Ch. 19: Deep Learning
+
