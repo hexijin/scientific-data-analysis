@@ -1,10 +1,10 @@
-import random
-from typing import List, Tuple
+# import random
+from typing import Tuple  # , List
 
-from grus_ch04_code import Vector
+# from grus_ch04_code import Vector
 from grus_ch05_code import median, standard_deviation
 from grus_ch06_code import normal_cdf
-from grus_ch15_code import error, squared_error, least_squares_fit, multiple_r_squared, bootstrap_statistic
+from grus_ch15_code import *
 
 from grus_ch05_examples import daily_minutes_good
 
@@ -125,3 +125,18 @@ assert p_value(-1.865, 0.155) < 0.001
 assert p_value(0.923, 1.249) > 0.4
 
 # PDF p. 258 - Regularization
+
+random.seed(0)
+beta_0 = least_squares_fit_ridge(inputs, daily_minutes_good, learning_rate, 5000, 25)
+
+beta_0_1 = least_squares_fit_ridge(inputs, daily_minutes_good, 0.1, learning_rate, 5000, 25)
+assert 4 < dot(beta_0_1[1:], beta_0_1[1:]) < 5
+assert 0.67 < multiple_r_squared(inputs, daily_minutes_good, beta_0_1) < 0.69
+
+beta_1 = least_squares_fit_ridge(inputs, daily_minutes_good, 1, learning_rate, 5000, 25)
+assert 3 < dot(beta_1[1:], beta_1[1:]) < 4
+assert 0.67 < multiple_r_squared(inputs, daily_minutes_good, beta_1) < 0.69
+
+beta_10 = least_squares_fit_ridge(inputs, daily_minutes_good, 10, learning_rate, 5000, 25)
+assert 1 < dot(beta_10[1:], beta_10[1:]) < 2
+assert 0.5 < multiple_r_squared(inputs, daily_minutes_good, beta_10) < 0.6

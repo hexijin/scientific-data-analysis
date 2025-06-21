@@ -1,7 +1,7 @@
 import random
 from typing import List, TypeVar, Callable
 
-from grus_ch04_code import dot, Vector, vector_mean
+from grus_ch04_code import dot, Vector, vector_mean, subtract
 from grus_ch08_code import gradient_step
 from grus_ch14_code import demeaned_sum_of_squares
 
@@ -58,3 +58,46 @@ def bootstrap_statistic(data: List[X],
     return [stats_fn(bootstrap_sample(data)) for _ in range(num_samples)]
 
 # PDF p. 257 - Regularization
+
+def ridge_penalty(beta: Vector, alpha: float) -> float:
+    return alpha * dot(beta[1:], beta[1:])
+
+def squared_error_ridge(x: Vector,
+                        y: float,
+                        beta: Vector,
+                        alpha: float) -> float:
+    return error(x, y, beta) ** 2 + ridge_penalty(beta, alpha)
+
+def ridge_penalty_gradient(beta: Vector,
+                           alpha: float) -> Vector:
+    """gradient of just the ridge penalty"""
+    return [0.] + [2 * alpha * beta_j for beta_j in beta[1:]]
+
+def minus_sqerror_ridge_gradient(x: Vector,
+                                 y: float,
+                                 beta: Vector,
+                                 alpha: float) -> Vector:
+    return subtract(minus_sqerror_gradient(x, y, beta), ridge_penalty_gradient(beta, alpha))
+
+def least_squares_fit_ridge(xs: List[Vector],
+                            ys: List[float],
+                            alpha: float,
+                            learning_rate: float,
+                            num_steps: int,
+                            batch_size: int = 1) -> Vector:
+    # Start guess with mean
+    guess = [random.random() for _ in xs[0]]
+
+    for i in range(num_steps):
+        for start in range(0, len(xs), batch_size):
+            batch_xs = xs[start:start+batch_size]
+            batch_ys = ys[start:start+batch_size]
+
+            minus_gradient = vector_mean([minus_sqerror_ridge_gradient(x, y, guess, alpha)
+                                          for x, y in zip(batch_xs, batch_ys)])
+            guess = gradient_step(guess, minus_gradient, learning_rate)
+
+    return guess
+
+def lasso_penalty(beta, alpha):
+    return alpha * sum(abs(beta_i) for beta_i in beta[1:])
