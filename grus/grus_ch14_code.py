@@ -2,7 +2,6 @@ from typing import Tuple
 
 from grus_ch04_code import Vector
 from grus_ch05_code import correlation, standard_deviation, mean, de_mean
-from grus_ch08_code import gradient_step
 
 # PDF p. 240
 
