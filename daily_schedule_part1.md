@@ -1,12 +1,10 @@
 ## Daily Schedule Part 1 (Actual &mdash; Kept Retrospectively)
 
-*Regular meeting schedule is Wednesdays and Saturdays, 11:00-12:00*
-
 Back to [Course home page](./index.html)
 
 ### Part 1: Scientific Python (using Imad Pasha, *Astronomical Python*)
 
-Part 1 Uses Pasha and lasts for the first three weeks of Term 6
+##### Part 1 Uses Pasha and lasts for the first three weeks of Term 6
 
 #### Week 1 &mdash; Shell and Python Quick-Start/Review
 
