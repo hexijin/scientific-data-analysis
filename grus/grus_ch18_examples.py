@@ -122,3 +122,22 @@ with tqdm.trange(500) as t:
             ]
         t.set_description(f"fizz buzz (loss: {epoch_loss:.2f})")
 
+def argmax(xs: list) -> int:
+    return max(range(len(xs)), key=lambda i: xs[i])
+
+assert argmax([0, -1]) == 0
+assert argmax([-1, 0]) == 1
+assert argmax([-1, 10, 5, 20, -3]) == 3
+
+num_correct = 0
+num_tests = 100
+for n in range(1, num_tests + 1):
+    x = binary_encode(n)
+    predicted = argmax(feed_forward(fb_network, x)[LAST_LAYER])
+    actual = argmax(fizz_buzz_encode(n))
+    labels = [str(n), "fizz", "buzz", "fizzbuzz"]
+    print(n, labels[predicted], labels[actual])
+    if predicted == actual:
+        num_correct += 1
+
+print(num_correct, "/", num_tests)
