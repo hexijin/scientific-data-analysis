@@ -25,10 +25,12 @@ Part 2 Uses Grus and lasts for the remaining three-and-a-half weeks of Term 6
 * June 19 &mdash; Chapters 11 and 13: Machine Learning and Naive Bayes (and you may need to pick up some material from Chapter 12 on k-Nearest Neighbors which we are otherwise skipping)
 * June 21 &mdash; Chapters 14 and 15: Simple Linear Regression and Multiple Regression &mdash; In Chapter 15, Grus squeezed in a digression on [The Bootstrap](https://www.jstor.org/stable/2030104) which is a computational approach not just to estimating parameters, but to estimating uncertainties in those parameters
 
+##### In the interest of getting to Neural Networks and Deep Learning in our final week, we are skipping, Chapters 12 (on k-Nearest Neighbors), 16 (on Logistic Regression), and 17 (on Decision Trees)
+
 #### Week 7 &mdash; Neural Networks &mdash; Deep Learning
 
-* June 23 (additional meeting, Monday 11am) &mdash; Chapter 18: Neural Networks (in the interest of getting to Neural Networks and Deep Learning in our final week, we are skipping Chapters 16 and 17 on Logistic Regression and Decision Trees)
-* June 25 (Wednesday no meeting, but this would be a good time to try the live coding session) &mdash; Get a feeling for how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing: [Joel Grus - Building a Deep Learning Library](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) (build the code in PyCharm as Grus builds it in VS Code, pausing the live coding session whenever you need to catch up with him) &mdash; This live coding session is effectively a blindingly-fast presentation of the two chapters we are studying this week
-* June 26 (final meeting moved to Thursday 11am) &mdash; Chapter 19: Deep Learning
+* June 23 (additional meeting, Monday 11am) &mdash; Chapter 18: Neural Networks
+* June 25 (Wednesday no meeting, but Tuesday or Wednesday would be a good time to try the live coding session) &mdash; Get a feeling for how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing, by building the code in PyCharm as [Grus builds a deep learning libary](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) in VS Code, pausing the live coding session whenever you need to catch up with him &mdash; This live coding session is effectively a blindingly-fast presentation of the two chapters we are studying in our final week
+* June 26 (final meeting, Thursday 11am) &mdash; Chapter 19: Deep Learning
 
 See also [Looking Beyond](./looking_beyond.html)
