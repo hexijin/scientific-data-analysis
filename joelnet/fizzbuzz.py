@@ -49,7 +49,7 @@ net = NeuralNet([
 train(net, inputs, targets, num_epochs=5000, optimizer=SGD(lr=0.001))
 
 for x in range(1, 101):
-    predicted = net.forward(binary_encode(x))
+    predicted = net.forward(np.array(binary_encode(x)))
     predicted_idx = np.argmax(predicted)
     actual_idx = np.argmax(fizz_buzz_encode(x))
     labels = [str(x), "fizz", "buzz", "fizzbuzz"]
