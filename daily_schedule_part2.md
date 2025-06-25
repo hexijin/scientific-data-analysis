@@ -27,8 +27,8 @@ See also [Daily Schedule - Part 1](./daily_schedule_part1.html)
 
 #### Week 7 &mdash; Neural Networks &mdash; Deep Learning
 
-* June 23 (additional meeting, Monday 11am) &mdash; Chapter 18: Neural Networks
-* June 25 (Wednesday no meeting, but Tuesday or Wednesday would be a good time to try the live coding session) &mdash; Get a feeling for how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing, by building the code in PyCharm as [Grus builds a deep learning libary](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) in VS Code, pausing the live coding session whenever you need to catch up with him &mdash; This live coding session is effectively a blindingly-fast presentation of the two chapters we are studying this week
+* June 23 &mdash; Chapter 18: Neural Networks
+* June 25 (no meeting, but this would be a good time to try the live coding session) &mdash; Get a feeling for how a real pro codes, including type-hinting, systematic adherence to style choices, and code testing, by building the code in PyCharm as [Grus builds a deep learning libary](https://joelgrus.com/2017/12/04/livecoding-madness-building-a-deep-learning-library/) in VS Code, pausing the live coding session whenever you need to catch up with him &mdash; This live coding session is effectively a blindingly-fast presentation of Chapter 18
 * June 26 (final meeting, Thursday 11am) &mdash; Chapter 19: Deep Learning
 
 See also [Looking Beyond](./looking_beyond.html)
