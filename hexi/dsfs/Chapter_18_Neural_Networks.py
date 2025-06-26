@@ -160,89 +160,89 @@ assert feed_forward(network, [1, 1])[-1][0] < 0.01
 
 
 
-# Example: Fizz Buzz
-
-def fizz_buzz_encode(x_fb: int) -> Vector:
-    if x_fb % 15 == 0:
-        return [0, 0, 0, 1]
-    elif x_fb % 5 == 0:
-        return [0, 0, 1, 0]
-    elif x_fb % 3 == 0:
-        return [0, 1, 0, 0]
-    else:
-        return [1, 0, 0, 0]
-
-assert fizz_buzz_encode(2) == [1, 0, 0, 0]
-assert fizz_buzz_encode(6) == [0, 1, 0, 0]
-assert fizz_buzz_encode(10) == [0, 0, 1, 0]
-assert fizz_buzz_encode(30) == [0, 0, 0, 1]
-
-
-def binary_encode(x_b: int) -> Vector:
-    binary: List[float] = []
-
-    for i in range(10):
-        binary.append(x_b % 2)
-        x_b = x_b // 2
-
-    return binary
-
-assert binary_encode(0) == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-assert binary_encode(1) == [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-assert binary_encode(10) == [0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
-assert binary_encode(101) == [1, 0, 1, 0, 0, 1, 1, 0, 0, 0]
-assert binary_encode(999) == [1, 1, 1, 0, 0, 1, 1, 1, 1, 1]
-
-
-xs = [binary_encode(n) for n in range(101, 1024)]
-ys = [fizz_buzz_encode(n) for n in range(101, 1024)]
-
-num_hidden = 25
-
-network = [
-    [[random.random() for _ in range(10 + 1)] for _ in range(num_hidden)],
-    [[random.random() for _ in range(num_hidden + 1)] for _ in range(4)]
-]
-
-from Chapter_4_Linear_Algebra import squared_distance
-
-learning_rate = 1.0
-
-with tqdm.trange(500) as t:
-    for epoch in t:
-        epoch_loss = 0.0
-        
-        for x, y in zip(xs, ys):
-            predicted = feed_forward(network, x)[-1]
-            epoch_loss += squared_distance(predicted, y)
-            gradients = sqerror_gradients(network, x, y)
-
-            network = [[gradient_step(neuron, grad, -learning_rate)
-                        for neuron, grad, in zip(layer, layer_grad)]
-                       for layer, layer_grad in zip(network, gradients)]
-
-        t.set_description(f"fizz buzz (loss: {epoch_loss:.2f})")
-
-
+# # Example: Fizz Buzz
+#
+# def fizz_buzz_encode(x_fb: int) -> Vector:
+#     if x_fb % 15 == 0:
+#         return [0, 0, 0, 1]
+#     elif x_fb % 5 == 0:
+#         return [0, 0, 1, 0]
+#     elif x_fb % 3 == 0:
+#         return [0, 1, 0, 0]
+#     else:
+#         return [1, 0, 0, 0]
+#
+# assert fizz_buzz_encode(2) == [1, 0, 0, 0]
+# assert fizz_buzz_encode(6) == [0, 1, 0, 0]
+# assert fizz_buzz_encode(10) == [0, 0, 1, 0]
+# assert fizz_buzz_encode(30) == [0, 0, 0, 1]
+#
+#
+# def binary_encode(x_b: int) -> Vector:
+#     binary: List[float] = []
+#
+#     for i in range(10):
+#         binary.append(x_b % 2)
+#         x_b = x_b // 2
+#
+#     return binary
+#
+# assert binary_encode(0) == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# assert binary_encode(1) == [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# assert binary_encode(10) == [0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+# assert binary_encode(101) == [1, 0, 1, 0, 0, 1, 1, 0, 0, 0]
+# assert binary_encode(999) == [1, 1, 1, 0, 0, 1, 1, 1, 1, 1]
+#
+#
+# xs = [binary_encode(n) for n in range(101, 1024)]
+# ys = [fizz_buzz_encode(n) for n in range(101, 1024)]
+#
+# num_hidden = 25
+#
+# network = [
+#     [[random.random() for _ in range(10 + 1)] for _ in range(num_hidden)],
+#     [[random.random() for _ in range(num_hidden + 1)] for _ in range(4)]
+# ]
+#
+# from Chapter_4_Linear_Algebra import squared_distance
+#
+# learning_rate = 1.0
+#
+# with tqdm.trange(500) as t:
+#     for epoch in t:
+#         epoch_loss = 0.0
+#
+#         for x, y in zip(xs, ys):
+#             predicted = feed_forward(network, x)[-1]
+#             epoch_loss += squared_distance(predicted, y)
+#             gradients = sqerror_gradients(network, x, y)
+#
+#             network = [[gradient_step(neuron, grad, -learning_rate)
+#                         for neuron, grad, in zip(layer, layer_grad)]
+#                        for layer, layer_grad in zip(network, gradients)]
+#
+#         t.set_description(f"fizz buzz (loss: {epoch_loss:.2f})")
+#
+#
 def argmax(xs_argmax: list) -> int:
     return max(range(len(xs_argmax)), key=lambda i: xs_argmax[i])
-
-assert argmax([0, -1]) == 0
-assert argmax([-1, 1]) == 1
-assert argmax([-1, 10, 5, 20, -3]) == 3
-
-
-num_correct = 0
-
-for n in range(1, 101):
-    x = binary_encode(n)
-    predicted = argmax(feed_forward(network, x)[-1])
-    actual = argmax(fizz_buzz_encode(n))
-    labels = [str(n), "fizz", "buzz", "fizzbuzz"]
-    print(n,  labels[predicted], labels[actual])
-
-    if predicted == actual:
-        num_correct += 1
-
-print(num_correct, "/", 100)
-
+#
+# assert argmax([0, -1]) == 0
+# assert argmax([-1, 1]) == 1
+# assert argmax([-1, 10, 5, 20, -3]) == 3
+#
+#
+# num_correct = 0
+#
+# for n in range(1, 101):
+#     x = binary_encode(n)
+#     predicted = argmax(feed_forward(network, x)[-1])
+#     actual = argmax(fizz_buzz_encode(n))
+#     labels = [str(n), "fizz", "buzz", "fizzbuzz"]
+#     print(n,  labels[predicted], labels[actual])
+#
+#     if predicted == actual:
+#         num_correct += 1
+#
+# print(num_correct, "/", 100)
+#
