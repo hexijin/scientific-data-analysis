@@ -21,4 +21,4 @@ Code, tests, and examples in a PyCharm project with some files for each chapter 
 * June 21 &mdash; Ch. 14: Simple Linear Regression [implementation](./grus/grus_ch14_code.py), [tests](./grus/grus_ch14_test.py), and [examples](./grus/grus_ch14_examples.py) &mdash; Ch. 15: Multiple Regression [implementation](./grus/grus_ch15_code.py) and [examples](./grus/grus_ch15_examples.py)
 * June 23 &mdash; Ch. 18: Neural Networks [implementation](./grus/grus_ch18_code.py), [tests](./grus/grus_ch18_test.py), and [examples](./grus/grus_ch18_examples.py)
 * June 25 &mdash; A [screenshot of the project structure](./LiveCodingSession.png) that you will have when you are done with Grus's live coding session
-* June 26 &mdash; NOT FINISHED Ch. 19: Deep Learning [implementation](./grus/grus_ch19_code.py), [tests](./grus/grus_ch19_test.py), and [examples](./grus/grus_ch19_examples.py)
+* June 26 &mdash; CLOSE TO FINISHED Ch. 19: Deep Learning [implementation](./grus/grus_ch19_code.py), [tests](./grus/grus_ch19_test.py), and [examples](./grus/grus_ch19_examples.py)
