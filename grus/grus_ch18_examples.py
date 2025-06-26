@@ -3,7 +3,7 @@ import tqdm
 
 from grus_ch04_code import squared_distance
 from grus_ch08_code import gradient_step
-from grus_ch18_code import perceptron_output, feed_forward, LAST_LAYER, minus_sqerror_gradients, binary_encode
+from grus_ch18_code import feed_forward, LAST_LAYER, minus_sqerror_gradients, binary_encode
 from grus_ch18_code import fizz_buzz_encode, NUMBER, FIZZ, BUZZ, FIZZBUZZ
 from grus_ch18_code import BINARY_ENCODING_LENGTH, FIZZBUZZ_ENCODING_LENGTH
 
