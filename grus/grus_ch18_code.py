@@ -89,3 +89,6 @@ def binary_encode(x: int) -> Vector:
         binary.append(x % 2)
         x = x // 2
     return binary
+
+def argmax(xs: list) -> int:
+    return max(range(len(xs)), key=lambda i: xs[i])

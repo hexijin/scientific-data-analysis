@@ -1,5 +1,5 @@
 from typing import List, Callable, Iterable
-from math import exp
+from math import exp, log
 
 import random
 
@@ -237,4 +237,27 @@ class Relu(Layer):
 # PDF p. 325
 
 def softmax(tensor: Tensor) -> Tensor:
-    raise NotImplementedError
+    if is_1d(tensor):
+        # Subtract largest value for numerical stability
+        largest = max(tensor)
+        exps = [exp(x - largest) for x in tensor]
+        sum_of_exps = sum(exps)
+        return [exp_i / sum_of_exps for exp_i in exps]
+    else:
+        return [softmax(tensor_i) for tensor_i in tensor]
+
+class SoftmaxCrossEntropy(Loss):
+    def loss(self, predicted: Tensor, actual: Tensor) -> float:
+        # Apply softmax to get probabilities
+        probabilities = softmax(predicted)
+        likelihoods = tensor_combine(lambda p, act: log(p + 1e-30) * act,
+                                     probabilities, actual)
+
+        return -tensor_sum(likelihoods)
+
+    def gradient(self, predicted: Tensor, actual: Tensor) -> Tensor:
+        probabilities = softmax(predicted)
+
+        return tensor_combine(lambda p, act: p - act, probabilities, actual)
+
+# PDF p. 328

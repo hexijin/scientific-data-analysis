@@ -5,7 +5,7 @@ from grus_ch04_code import squared_distance
 from grus_ch08_code import gradient_step
 from grus_ch18_code import feed_forward, LAST_LAYER, minus_sqerror_gradients, binary_encode
 from grus_ch18_code import fizz_buzz_encode, NUMBER, FIZZ, BUZZ, FIZZBUZZ
-from grus_ch18_code import BINARY_ENCODING_LENGTH, FIZZBUZZ_ENCODING_LENGTH
+from grus_ch18_code import BINARY_ENCODING_LENGTH, FIZZBUZZ_ENCODING_LENGTH, argmax
 
 # PDF p. 293
 
@@ -100,9 +100,6 @@ with tqdm.trange(500) as t:
             ]
         t.set_description(f"fizz buzz (loss: {epoch_loss:.2f})")
 
-def argmax(xs: list) -> int:
-    return max(range(len(xs)), key=lambda i: xs[i])
-
 assert argmax([0, -1]) == 0
 assert argmax([-1, 0]) == 1
 assert argmax([-1, 10, 5, 20, -3]) == 3
@@ -119,3 +116,4 @@ for n in range(1, num_tests + 1):
         num_correct += 1
 
 print(num_correct, "/", num_tests)
+
